@@ -2049,7 +2049,7 @@ p > code {
   }
 }
 body {
-      background-color: #eee;
+      background-color: #f8f9fa;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2085,11 +2085,11 @@ body {
     .node-title::before {
       background-color: #e03131;
     }a {
-      color: #555;
+      color: #adb5bd;
     }
     
     .next-md-body a, .friends-box a  {
-      color: #555;
+      color: #adb5bd;
     }a:hover {
       color: #222;
     }
@@ -2155,7 +2155,7 @@ body {
       color: #fc6423;
       border-bottom-color: #fc6423;
     }.bg-color {
-      background-color: #fffffffe;
+      background-color: #f8f9fafe;
     }
     .site-meta {
       background: #000 !important;
