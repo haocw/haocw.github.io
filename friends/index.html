@@ -4,15 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://localhost:4000/media/css/live2d.css">
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://localhost:4000/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/media/css/live2d.css">
     <link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+    <meta name="description" content="黑暗中孤影" />
     <link rel="stylesheet" href="http://localhost:4000/media/css/font-awesome.css">
     <title>HHH_hhh</title>
 </head>
-
-
 <body>
     <div id="content">
         <div class="nav-large">
@@ -658,9 +656,8 @@ menulist.eq(i).show();
 </script>
 <!----夜间模式👆--></div>
                 <!--------------- pc端菜单栏👆 ---------------->
-               
                 <!----------- 移动端导航栏👇 ----------------->
-                <div class="tbar"> <style>
+                <div class="mobilebar"><style>
   .navmobile {
     z-index: 15;
     max-height: 40vh;
@@ -785,74 +782,80 @@ menulist.eq(i).show();
         btstate = false;
       }
     }
-  </script> </div>
+  </script> 
                 <!----------- 移动端导航栏👆 ----------------->
-
+                </div>
                 <!-- ----------------左侧菜单栏html 👇-------------------------------------->
                 
-                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 topindex">
-                            <div class="mobilebar">
-                                <img src="" alt="" class="plbg">
-<script>
-    var bgchoice = "";
-    if(bgchoice=='default')
-        var plbgurl = ""
-    else  
-        var plbgurl = ""
-    $(".plbg").attr("src",plbgurl);
-    $(".plbg").fadeIn(200);
-</script>
-                            </div>
-                            <script>
-                                $(".tag").each(function () {
-                                    var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
-                                    $(this).css('color', rgb);
-                                });
-                            </script>
-                            <div class="tagsbackgroundtop"></div>
-                            
-                                <img class="tagsimg" src="" alt="">
-                            
-                            <div class="tags-container">
-                        
-                            </div>
-                            <div style="display: none;">
-                                
+                <div class="col-md-2 col-lg-3"></div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 posttop">
+                    <body>
+    <div id="friendscontainermobile">
+        
+    </div>
+
+    <div id="pcintroimg">
+        <div class="sea">
+            <p class="title">友人帐</p>
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <span class="wave"></span>
+        </div>
+    </div>
+
+    <div id="friendscontainer">
+        <div id="friendsrule">
+            
+        </div>
+        
+    </div>
+</body>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
                             </div>
                         </div>
-                        
-                <!--------------- ---顶部菜单栏html👆--------->
-                <div class="col-xs-6 col-sm-3"></div>
-            </div>
-            
-        </div></div>
-        <div id="bg">
-        </div>
-        <!-- 背景图加载方式👇 -->
-        <div id="bgchoice" style="display: none">
                     </div>
-                    
-                    <div id="bgurl" style="display:none"></div>
-                       
-        </div>
-        <!-- 背景图加载方式👆 -->
-        <div id="landlord">
-            <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
-        </div>
-        <div id="domainname" style="display:none">http://localhost:4000
+                    <div id="comment" class="comment">
+                        <div class="commentcontainer">
+                            
+                        </div>
+                    </div>
+                    <div style="display: none;">
+                        
+                    </div>
                 </div>
-</body>
+                <div class="col-md-2 col-lg-3">
+                </div>
+            <div id="bg">
+            </div>
+        </div>
+        
+        <!------------------ 顶部菜单栏html👆--------->
+        
 
+    </div>
+    
+    <div class="tog">
+        <div class="toggleContainer">
+            <div class="toggle">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+        </div>
+    </div>
+    <div id="bgchoice" style="display: none"></div>
+    
+    <div id="bgurl" style="display:none"></div>
+    
+    </div>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">http://localhost:4000</div>
+</body>
 </html>
-<!-- 标签框随机色彩功能👇 -->
-<script>
-    $(".tag").each(function () {
-        var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
-        $(this).css('color', rgb);
-    });
-</script>
-<!-- 标签框随机色彩功能👆 -->
 
 <!-------------------- live2d功能👇 --------------------------->
 
@@ -860,19 +863,16 @@ menulist.eq(i).show();
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
-    var bgchoice = ""
-    var bg = $('#bg');
-    var bgurl = document.getElementById("bgurl").innerHTML;
-    if (bgchoice == 'default')
-    {
-        for (var i = 0; i < 3; i++)
-            bgurl = bgurl.replace("\\", "/");
-        bgurl = "http://localhost:4000/" + bgurl;
-    }
-    bg.css("background", "url('" + bgurl + "')");
+        var bgchoice=$('#bgchoice').html();
+        var bg = $('#bg');
+        var bgurl = document.getElementById("bgurl").innerHTML;
+        if(bgchoice=='default')
+            for (var i = 0; i < 3; i++)
+                bgurl = bgurl.replace("\\", "/");
+        bg.css("background", "url('" + bgurl + "')");
 
-    window.onload = function () {
-        aplayerbtnInit();
-    }
+        window.onload = function(){
+            aplayerbtnInit();
+        }
 </script>
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->

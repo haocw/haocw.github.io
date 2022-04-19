@@ -1,14 +1,46 @@
+<!-- <style>
+  #bber-talk{display:-webkit-flex;display:flex;width:100%;line-height:2em;height:45px;max-width:760px;text-align:left;padding:5px 15px;margin-bottom:3em;position: relative;background-color: var(--light-header);border-radius:8px;font-size:15px;}
+#bber-talk svg{fill: currentColor;vertical-align: middle;display: inline;margin-right:5px;}
+.talk-list{margin: 0;max-height: 35px;overflow: hidden;}
+.talk-list li {list-style: none;margin-bottom: 10px;width: 100%;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+</style>
+<div id="bber-talk"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script>
+  //依赖 jQuery 库，其中 jsonUrl 改为自己的
+$(document).ready(function(){
+  if ( $("#bber-talk").length > 0 ) {
+    jsonUrl = "https://7477-twikoo-6gbp33x72a40527e-1259442930.tcb.qcloud.la/json/bber.json"
+    $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+      var bberHtml = ''
+      $.each(res.data, function(i, item){
+        d = new Date(item.date)
+        date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+        dataTime = '<span class="datatime">'+date+'</span>'
+        bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a href="https://immmmm.com/bb/">'+item.content+'</a></li>'
+      });
+      $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+      Lately({ 'target': '#bber-talk .datatime' });
+    });
+    function Roll (){
+      var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+      last_li.after(cur_li);
+    };
+    setInterval(Roll,3000);
+  }
+});
+</script> -->
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://localhost:4000/media/css/live2d.css">
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://localhost:4000/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/media/css/live2d.css">
     <link rel="stylesheet" href="http://localhost:4000/styles/main.css">
     <link rel="stylesheet" href="http://localhost:4000/media/css/font-awesome.css">
+    <meta name="description" content="黑暗中孤影" />
     <title>HHH_hhh</title>
 </head>
 
@@ -17,7 +49,6 @@
     <div id="content">
         <div class="nav-large">
             <div class="row">
-                <!--------------- pc端菜单栏👇 ---------------->
                 <div class="side"><head>
     <link rel="stylesheet" href="http://localhost:4000/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://localhost:4000/styles/main.css">
@@ -657,10 +688,9 @@ menulist.eq(i).show();
     }
 </script>
 <!----夜间模式👆--></div>
-                <!--------------- pc端菜单栏👆 ---------------->
-               
-                <!----------- 移动端导航栏👇 ----------------->
-                <div class="tbar"> <style>
+                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+                
+                <div class="mobilebar"><style>
   .navmobile {
     z-index: 15;
     max-height: 40vh;
@@ -785,14 +815,11 @@ menulist.eq(i).show();
         btstate = false;
       }
     }
-  </script> </div>
-                <!----------- 移动端导航栏👆 ----------------->
-
-                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-                
-                        <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 topindex">
-                            <div class="mobilebar">
-                                <img src="" alt="" class="plbg">
+  </script> 
+                </div>
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 topindex">
+                    <div class="mobilebar">
+                        <img src="" alt="" class="plbg">
 <script>
     var bgchoice = "";
     if(bgchoice=='default')
@@ -802,58 +829,68 @@ menulist.eq(i).show();
     $(".plbg").attr("src",plbgurl);
     $(".plbg").fadeIn(200);
 </script>
-                            </div>
-                            <script>
-                                $(".tag").each(function () {
-                                    var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
-                                    $(this).css('color', rgb);
-                                });
-                            </script>
-                            <div class="tagsbackgroundtop"></div>
-                            
-                                <img class="tagsimg" src="" alt="">
-                            
-                            <div class="tags-container">
-                        
-                            </div>
-                            <div style="display: none;">
-                                
-                            </div>
+                    </div>
+                    <div id='speak'>
+</div>
+    <!-- 使用markdown渲染 -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber-md.min.js" charset="utf-8" ></script> -->
+    <!-- 不使用markdown渲染 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!-- 解析微信表情（参考：https://github.com/buddys/qq-wechat-emotion-parser） -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script> -->
+<script>
+    var limitstr = ''
+    lnum = parseInt(limitstr)
+    ispeakBber.init({
+            el: '#speak', // 容器选择器
+            name: '', // 显示的昵称
+            envId: '', // 环境id
+            region: 'ap-shanghai', // 腾讯云地址，默认为上海
+            limit: lnum, // 每次加载的条数，默认为5
+            avatar: '',
+            fromColor: 'rgb(245, 150, 170)', // 下方标签背景颜色 默认 rgb(245, 150, 170)
+            loadingImg: '', // 自定义loading的图片，示例值为默认值
+            dbName: 'talks' // 数据的名称，默认talks，避免有人的命名不是这个，所以加入此配置字段。
+        })
+        .then(function () {
+            // 哔哔加载完成后的回调函数，你可以写你自己的功能
+            console.log('哔哔 加载完成')
+    })
+</script>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
+                      <div class="commentcontainer">
+                         
                         </div>
-                        
-                <!--------------- ---顶部菜单栏html👆--------->
+                    </div>
+                   <!---------------------------- 评论系统👆 ------------------------->
+                </div>
+                
+                <!------------------ 顶部菜单栏html👆--------->
                 <div class="col-xs-6 col-sm-3"></div>
             </div>
             
-        </div></div>
+        </div>
         <div id="bg">
         </div>
-        <!-- 背景图加载方式👇 -->
+        <!------- 背景图加载方式👇----- -->
         <div id="bgchoice" style="display: none">
-                    </div>
-                    
-                    <div id="bgurl" style="display:none"></div>
-                       
-        </div>
-        <!-- 背景图加载方式👆 -->
+            </div>
+            
+            <div id="bgurl" style="display:none"></div>
+               
+        <!------- 背景图加载方式👆----- -->
+    </div>
+
         <div id="landlord">
             <div class="message" style="opacity:0"></div>
             <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
         </div>
         <div id="domainname" style="display:none">http://localhost:4000
-                </div>
+        </div>
 </body>
 
 </html>
-<!-- 标签框随机色彩功能👇 -->
-<script>
-    $(".tag").each(function () {
-        var rgb = '#' + Math.floor((Math.random()) * 0xffffff).toString(16);;
-        $(this).css('color', rgb);
-    });
-</script>
-<!-- 标签框随机色彩功能👆 -->
-
 <!-------------------- live2d功能👇 --------------------------->
 
 <!-------------------- live2d功能👆 --------------------------->
