@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://haocw.github.io</id>
+    <id>http://localhost:4000</id>
     <title>HHH_hhh</title>
-    <updated>2022-04-19T08:27:01.612Z</updated>
+    <updated>2022-04-19T08:27:37.956Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://haocw.github.io"/>
-    <link rel="self" href="https://haocw.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4000"/>
+    <link rel="self" href="http://localhost:4000/atom.xml"/>
     <subtitle>黑暗中孤影</subtitle>
-    <logo>https://haocw.github.io/images/avatar.png</logo>
-    <icon>https://haocw.github.io/favicon.ico</icon>
+    <logo>http://localhost:4000/images/avatar.png</logo>
+    <icon>http://localhost:4000/favicon.ico</icon>
     <rights>All rights reserved 2022, HHH_hhh</rights>
     <entry>
         <title type="html"><![CDATA[广东省博物馆]]></title>
-        <id>https://haocw.github.io/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/</id>
-        <link href="https://haocw.github.io/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/">
+        <id>http://localhost:4000/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/</id>
+        <link href="http://localhost:4000/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/">
         </link>
         <updated>2022-04-01T03:08:34.000Z</updated>
         <summary type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://haocw.github.io/post-images/1650345385506.jpg" alt="" loading="lazy"></figure>
 ]]></summary>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://haocw.github.io/post-images/1650345385506.jpg" alt="" loading="lazy"></figure>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1650345385506.jpg" alt="" loading="lazy"></figure>
 <!-- more -->
-<p><img src="https://haocw.github.io/post-images/1650345355307.png" alt="" loading="lazy"><br>
-<img src="https://haocw.github.io/post-images/1650345362536.png" alt="" loading="lazy"><br>
+<p><img src="http://localhost:4000/post-images/1650345355307.png" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650345362536.png" alt="" loading="lazy"><br>
 二零二二年三月24日晚——抵达广州白云国际机场<br>
 ————————以铂尔曼大酒店为驻地<br>
 于2022年3月25日；3月30日；3月31日三天时间三刷广州省博物馆：<br>
@@ -36,27 +36,27 @@
 公元226年，孙权为便于统治，将交州分为交州和广州两部分，“广州”由此得名。<br>
 直到1921年成立市政厅，特指广州这座城市。</p>
 <p>🌈广东历史文化陈列<br>
-<img src="https://haocw.github.io/post-images/1650351715184.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650351715184.jpg" alt="" loading="lazy"><br>
 岭南：古亦称岭表，岭外。主要包括今南岭山脉以南的广东，广西东部，海南，香港和澳门等地区。<br>
 十二万八千年前，广东北部出现了早期人类——马坝人。后续岭南文化与中原文化不断碰撞交融，逐渐形成了汉族的广府，客家，潮汕三大主要民系。<br>
 👉人类颅骨化石<br>
-<img src="https://haocw.github.io/post-images/1650351443032.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650351443032.jpg" alt="" loading="lazy"><br>
 新石器时代早期。古越族先民有拔牙的习俗。颅骨中一个个缺失的牙齿就是这一习俗的反映。<br>
 在旧时文献中，这种风俗习惯被称作“凿齿”、“打牙”。这是一种有意识地采用人工方法，拔除（或打、或敲）某些健康前位齿的行为，在《山海经》、《淮南子》中都有记载。古越族的后代——近现代的台湾高山族还或多或少地保留有拔牙的习俗。在广东珠江三角洲、环珠江口的贝丘、沙丘遗址，目前已经发现数十例与拔牙相关的考古遗迹。这些拔牙遗迹的人类体质特征相同，所拔牙齿位基本相同。它们的年代均在距今4000年以内的先秦时期。此外，越人中还有一种漆牙的习俗，称为“黑齿”。<br>
 对于“凿齿”的习俗，一是认为是青春期、成丁礼或结婚所需的一种仪式；<br>
 二是认为其表示一种美的观念，具有装饰意义；<br>
 三是认为这是为了表示崇信的一种行为或纪念性的行为。<br>
 👉韶关曲江石峡遗址 玉琮<br>
-<img src="https://haocw.github.io/post-images/1650356199765.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650356199765.jpg" alt="" loading="lazy"><br>
 琮是古代用于祭祀的玉质筒状物，最早的玉琮见于安徽潜山薛家岗第三期文化，距今约5100年。尤以良渚文化的玉琮最发达，出土与传世的数量最多。<br>
 在玉器中，琮是用于祭地的玉器，古人认为“天圆地方”，故以圆璧祭天，以方琮祭地，玉琮成为统治阶级祭祀苍茫大地的礼器，也是巫师通神的法器。<br>
 《周礼·春官·大宗伯》记载“以玉作六器，以礼天地四方：以苍璧礼天，以黄琮礼地，以青圭礼东方，以赤璋礼南方，以白琥礼西方，以玄璜礼北方”。它与玉璧、玉圭、玉璋、玉璜、玉琥被称为“六器”。为我国古代重要礼器之一。<br>
 琮的外型状似笔筒，外型方内洞圆，至乾隆皇帝时期出土时都还无人晓得用途，乾隆自行考证认为是古人搬运重物用的配重品，还自行取名“杠头”并加装铜内胆作为笔筒，烧香和宫廷插花花瓶，直到乾隆去世90多年后才考证出是礼器琮。<br>
 👉秦 “番禺”漆盒<br>
-<img src="https://haocw.github.io/post-images/1650356509680.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650356509680.jpg" alt="" loading="lazy"><br>
 番禺是目前考古实物中所见广州最早的名称。也是岭南开始实施郡县制的见证！<br>
 👉西汉 铜印染工具（复制品）<br>
-<img src="https://haocw.github.io/post-images/1650356709384.jpg" alt="" loading="lazy"><br>
+<img src="http://localhost:4000/post-images/1650356709384.jpg" alt="" loading="lazy"><br>
 这套印花凸版是目前世界上年代最早的织物印花工具</p>
 ]]></content>
     </entry>
