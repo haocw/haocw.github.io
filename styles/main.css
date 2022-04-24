@@ -2115,11 +2115,11 @@ body {
       }.nav-item a:hover {
         color: #222;
       }.nav-item-active {
-      background: #f9f9f9fe;
+      background: #f8f9fafe;
     }
 
     .nav-item:hover {
-      background: #f9f9f9fe;
+      background: #f8f9fafe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2171,6 +2171,8 @@ body {
     }
     .mist .site-title i {
       background: #c92a2afe;
+    }.box-scale > #landlord {
+      transform: scale([0,1]);
     }.box-shadow-wrapper {
       box-shadow: none !important;
     }body {
