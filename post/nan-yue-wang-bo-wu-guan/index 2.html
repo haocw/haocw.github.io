@@ -8,8 +8,8 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="黑暗中独影">
 <meta name="theme-color" content="#212529">
-<title>HHH_hhh</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1651495523104">
+<title>南越王博物馆 | HHH_hhh</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1651495779020">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -41,6 +41,8 @@
 
 
 
+  <meta name="description" content="南越王博物馆" />
+  <meta name="keywords" content="~记录有光__博物馆" />
 </head>
 
 <body>
@@ -144,97 +146,415 @@
   <div class="main-continer">
     
     <div
-      class="section-layout  pisces">
+      class="section-layout pisces ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">HHH__cw</p>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">2</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-  
-  
 
+<div class="sidebar">
   
-
-
-
-</div>
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'pisces';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    jQuery.Velocity(hideElement, 'stop');
+    jQuery.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        jQuery.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box tag-line box-shadow-wrapper">
-          <section class="section tags-section posts-expand bg-color">
-            <div class="padding-wrapper">
-  <div class="tag-timeline-box">
-    <div class="tag-timeline-wrapper">
-      <div class="tag-timeline-title">
-        <h2>
-          ~记录有光_见闻
-          <small class="language" data-lan="tag">标签</small>
-        </h2>
-      </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <a href="https://haocw.github.io/post/xi-bei-xing/">
-        <div class="motion-warpper">
-          <div class="tag-post-node">
-            <h1>
-              01-28
-              <small>西京自有麒麟阁，画向功臣卫霍间—西北行</small>
-            </h1>
-          </div>
-        </div>
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <section class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://haocw.github.io/post/nan-yue-wang-bo-wu-guan/"> 南越王博物馆 </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span class="language" data-lan="publish">发布于</span>
+      <span class="publish-time" data-t="2022-04-08 17:45:00">2022-04-08</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show language" data-lan="category-in">标签:</span>
+       
+      <a href="https://haocw.github.io/tag/BGx-MDRuQ/">
+        <span>~记录有光__博物馆</span>
       </a>
+       
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span
+        >38<span class="language" data-lan="minute"
+          >分钟</span
+        ></span
+      >
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span
+        >11261<span class="pc-show language" data-lan="words"
+          >字数</span
+        ></span
+      >
+    </span>
+    
+  </div>
+</section>
+
+            <div class="post-body next-md-body" id="post_body">
+              <p>🌈王宫展区—2022年3月26日<br>
+<img src="https://haocw.github.io/post-images/1650710256436.jpg" alt="" loading="lazy"><br>
+🌈王墓展区—2022年3月29日<br>
+<img src="https://haocw.github.io/post-images/1650710317582.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650710288767.jpg" alt="" loading="lazy"><br>
+🌈 背景：<br>
+📕南越国，又称为南越或南粤，在越南又称为赵朝。是前203年至前111年存在于岭南地区的一个国家，都城位于番禺（今广东省广州市）。<br>
+<img src="https://haocw.github.io/post-images/1650710460031.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650711722221.jpg" alt="" loading="lazy"><br>
+📕南越国是秦朝将灭亡时，由南海郡尉赵佗起兵兼并桂林郡和象郡后于前203年建立。前196年，赵佗向西汉皇帝刘邦称臣，南越国成为西汉的一个“外臣”。前183年，因西汉临朝称制的吕后改变对南越国的政策，两国交恶，赵佗开始称帝，其后，闽越、夜郎等国皆臣属于南越国，南越国的势力影响范围扩张至顶峰。前179年，南越国与西汉修好，赵佗再次向西汉皇帝汉文帝称臣。前113年，南越国第四代君主赵兴因向西汉请求“内属”，而和丞相吕嘉发生争议。吕嘉杀死赵兴，立其兄赵建德为新君主，并与西汉对峙。前112年，西汉皇帝汉武帝出兵10万发动对南越国的战争，并在前111年将南越国灭亡。南越国共存在93年，历经五代君主。<br>
+☁️立国<br>
+📕前221年，秦国已经通过战争相继消灭了韩、赵、魏、楚、燕、齐六国，并建立了统一的中原王朝——秦朝，此时秦朝最大的威胁为北面的匈奴和南面的百越。秦始皇派遣屠睢率领50万秦军分五路进攻岭南和闽越的百越地区，当时的岭南和闽越还处于原始的部落联盟割据状态，四支最强的百越支系为南越、西瓯、骆越和闽越。秦军第一路在余干（今属江西省）集结，进攻闽越，攻陷后设立了闽中郡。第二路在南野（今江西省赣州市南康区南）扼守，对闽越和南越形成压迫之势。第三路占领了南越的番禺。第四路在九嶷山（今湖南省宁远县南）驻守，第五路在镡城（今湖南省怀化市内）附近的越城岭驻守，准备一起进攻西瓯。<br>
+与此同时，秦始皇派遣史禄负责运送粮饷，史禄率领士兵在湘水和漓水之间开始修筑灵渠，以其沟通长江和珠江水系，保障秦军的后勤供给。<br>
+📕<img src="https://haocw.github.io/post-images/1650711763349.jpg" alt="" loading="lazy"><br>
+秦军进攻西瓯初时很顺利，杀了西瓯的首领译吁宋。但西瓯的越人不肯屈服，逃入丛林推选出新的将领与秦军对抗。后来还发动夜袭大破秦军，将秦军统帅屠睢杀死。秦军受到重创，秦朝只好让秦军的另一将领赵佗改为守势。灵渠修通之后，前214年，秦始皇派遣赵佗（《史记》和《汉书》只记载了赵佗率领秦军第二次攻打岭南地区的百越。但亦有现代学者参考后世史书的说法，认为任嚣也和赵佗一起率领秦军第二次攻打岭南地区的百越。）率领秦军重新发动攻势，很快击溃了西瓯人的反抗，此时，岭南地区已完全纳入了秦朝的版图。同年，秦朝在岭南地区设立了南海、桂林、象三郡，任嚣被委任为南海尉。南海郡下设番禺、龙川、博罗、揭阳等数县，赵佗被委任为龙川令。<br>
+前210年，秦始皇病逝，秦二世即位。前209年，秦朝自秦始皇以来长期的暴政激起了戍卒陈胜、吴广等人的起义。接着项羽、刘邦等势力也纷纷起来反秦，中原陷入了一片混乱状态。陈胜吴广起义后不久，南海尉任嚣病重，他临死前把时任龙川令的赵佗召来，告诉赵佗南海郡傍山靠海、有险可据，可以建立国家以抵抗中原各起义军的侵犯，并当即颁布文书让赵佗接任南海尉的职务。不久，任嚣病亡，赵佗向南岭的横浦关（今广东省南雄市梅关附近）、阳山关（今广东省阳山县北）、湟溪关（今广东省阳山县和连州市交界处的连江边上）等各关口的军队传达了据险防守的指令，防止中原的起义军进犯，并借机杀了秦朝安置在南海郡的官吏们，换上自己的亲信。前206年，秦朝灭亡，此时桂林和象两郡的越人也趁机纷纷脱离隶属关系。古蜀国的王族后裔蜀泮在象郡以螺城（今越南河内市东英县内）为都城建有瓯骆国，自称“安阳王”。后来，赵佗派兵攻打安阳王，但久攻不下，于是让太子赵始假装降服于安阳王，并娶安阳王之女媚珠为妻，赵始从瓯骆国逃回后，赵佗再次出兵攻打安阳王并将其赶走，接着还兼并了桂林郡和象郡。赵佗考虑到象郡越人部落势力的强盛，析其为交趾、九真两郡，仅派两使者管理重大事务，日常事务仍由各部落首领自己管理。前203年，赵佗以番禺为都城在岭南地区建立南越国，自称“南越武王”。<br>
+☁️南越王博物馆—是南越国第二位统治者赵眜的陵墓（对汉称南越文王，对内称南越文帝）。南越国称帝的只有南越武帝——赵佗和南越文帝——赵眜。<br>
+📕赵眜死后，陵墓建在南越国都城番禺的西北角（今广州市解放北路的象岗山上），历经2000多年，始终没有受到侵扰。1983年在此地建象岗宾馆（即中国大酒店）时被发现，被称为“南越王墓”，在陵墓内共出土随葬品1000多件，被认为是岭南地区已发现的陵墓当中，规模最大，随葬品最多，墓主人身份最高的陵墓。陵墓内出土丝缕玉衣，玉衣内仅剩下已腐朽成粉末状的骨渣，只在玉衣的头罩部分尚有少许残颅骨片。该墓出土还出土“文帝行玺”金印，说明在他生前曾自封为“南越文帝”。1988年，在他陵墓的原址建成“西汉南越王墓博物馆”，对陵墓和出土文物进行保护。<br>
+📕关于南越文帝真实名字的考证<br>
+《史记》里一直把南越国第二代王“南越文帝”称为赵胡，但1983年“南越王墓”被挖掘后，在出土的印章中发现“赵眜”的玉印和“文帝行玺”的金印，经考古学家证实，确认了“赵眜”应该是《史记》所载的“赵胡”的真名，而“赵胡”可能是司马迁在编写《史记》时出现的错误；也有可能是班固的《汉书》在传抄中抄错，后人又根据《汉书》更正了《史记》中的“错字”，以致一错再错。<br>
+然而，也有一些学者对笔误一说提出了异议。学者余天炽、覃圣敏、蓝日勇、梁旭达、覃彩銮等人，在其所著的《古南越国史》中认为南越文帝名字不可能出现记载错误。他们认为，《史记》对在位时间最短的赵建德事迹记载都尤为详实，因此对南越文帝名字记载错误的偶然性不存在；而且文帝在位期间同汉朝交往频繁，名字的笔误更不可能。他们认为赵眜是赵佗的儿子、文帝赵胡的父亲（或者赵眜是赵佗的长孙、文帝赵胡的兄长），被赵佗立为太子，未即位就死去了。赵胡将赵眜生前使用的印章带入坟墓，以示缅怀之意。<br>
+👉文帝行玺金印<br>
+<img src="https://haocw.github.io/post-images/1650711901779.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650712054711.jpg" alt="" loading="lazy"><br>
+本次无缘得见，待回京后再去一睹“真容”<br>
+👀该印长3.1厘米、宽3厘米、高1.8厘米、重148.5克，含金量98％。呈方形，田字方格，阴刻“文帝行玺”4字，小篆体。龙形花纹，形态逼真，利用龙身拱起的横穿以系组绶，也可作捉手。出土于墓主丝褛玉衣的胸部。它是中国考古发掘出土的首枚“皇帝”印玺，也是目前发现的最大西汉金印。<br>
+📕主棺室内<br>
+“文帝行玺”金印、“帝印”玉印、“泰子”金印、“赵眜”玉印等<br>
+东侧室是墓主四位殉葬夫人的葬所，出土了“右夫人玺”、“左夫人印”、“泰夫人印”等印章<br>
+👉“帝印”玉印<br>
+<img src="https://haocw.github.io/post-images/1650712501596.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650712524020.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650712534594.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650712568629.jpg" alt="" loading="lazy"><br>
+玉印的印文是阴刻篆书的“帝印”两个字，因墓室进水及年代久远，玉印被浸蚀成黄白色。印钮雕成螭虎形状，装饰有云纹。根据《史记》、《汉书》记载，南越国第一代王、第二代王都曾僭越称帝，在国内使用皇帝的礼仪。“帝印”玉印及封泥的出土是对这一史实有力的证据。这枚玉印是在墓主腰腹位置出土的九枚印章中的一枚。这九枚印玺原来是三个一组用小漆木盒盛放着，后来盒子朽烂掉了。玉印的印文是阴刻篆书的“帝印”两个字，因墓室进水及年代久远，玉印被浸蚀成黄白色。印钮雕成螭虎形状，装饰有云纹。<br>
+📕封泥<br>
+封泥又称泥封、芝泥，是秦朝至魏晋时期机密文件上的一种盖有印章的泥巴。当时文件大多写在简牍上，而简牍又是用绳子捆扎，那么封泥一般放在绳子的打结处，如果要拆开简牍，必须要挪动封泥。一旦封泥有动过的痕迹，便表示此文件有可能被人拆封。文件拆开后，为避免有人拿封泥私刻公章，封泥不能随意丢弃。随着纸张代替简牍成为书写材料，封泥开始退出历史舞台。<br>
+👉“泰子”金印<br>
+<img src="https://haocw.github.io/post-images/1650712824201.jpg" alt="" loading="lazy"><br>
+本次无缘得见，待回京后再去一睹“真容”<br>
+👉丝缕玉衣<br>
+<img src="https://haocw.github.io/post-images/1650712914505.jpg" alt="" loading="lazy"><br>
+本件为复制品，原件在中国国家博物馆 《海字攸同--广州秦汉考古成果展》展出。<br>
+丝缕玉衣是南越国文帝赵眜的殓服，为中国目前出土完整的西汉玉衣中唯一的一套丝缕玉衣。<br>
+📕玉衣又名玉柙、玉匣，由大量玉片穿缀而成，是汉代皇帝和高级贵族专用的殓具。因编缀玉片的质料不同，分为金缕玉衣、银缕玉衣、铜缕玉衣和丝缕玉衣等。<br>
+📕在玉衣主人的手边位置，放置着一对类似野猪牙状的器物，名为玉觹（xi）。在两周时期，所见的觹多是玉制，到东周时代实用功能逐渐衰减，逐渐成为象征贵族身份、地位的一种配饰品。到了汉代，按丧葬习俗逝者入葬时，手里一定要握住一些东西。南越王墓出土的这两件玉觹，就是墓主殓葬时放在后人放在他手上的，作为“玉握”使用。<br>
+<img src="https://haocw.github.io/post-images/1650713403147.jpg" alt="" loading="lazy"><br>
+👉铜承盘高足玉杯<br>
+<img src="https://haocw.github.io/post-images/1650713749093.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650713764026.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650713777370.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650713790810.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650713807149.jpg" alt="" loading="lazy"><br>
+全杯由筒式高足杯、花瓣形玉托和铜承盘三部分组成，呈三龙拱怀之势，由金、银、玉、铜、木五种材料做成。杯为青玉质，圆筒形，杯体座足由另一玉料雕出。托架为青玉质，双面琢花，作出三片大型花瓣，花瓣间凸出三片小花蕾，中间有圆孔，玉杯放入孔中。玉瓣托架由三条金头银身的龙各含一花蕾，把托架举起。三龙下面为铜质承盘，为扁圆形。玉杯座足下有一木块垫承，出土于墓中棺椁头端。这件承盘高足杯可能是南越王生前用来承聚甘露、服用长生不老药的器具。<br>
+📕承露盘<br>
+考之史籍， 承露盘仙人是汉武帝建造的。汉武帝特好神仙之道。他遍寻海外仙洲及甘液玉英以求“长生不死”，为求得和渺茫的仙界达成一种神秘的“生命信息”上的契合，不惜斥重资去营建一系列接待仙家的建筑，承露盘仙人像为其中一项规模较大的工程。<br>
+👉鎏金铜框玉卮<br>
+<img src="https://haocw.github.io/post-images/1650779984607.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650779995912.jpg" alt="" loading="lazy"><br>
+卮是古代常用酒器，质地有银，铜、漆，玉、石、陶等，以玉厄最为珍贵。这件玉危由婆金铜框饮9块青玉片构成，底部为圆形玉片。漆木盖周边镇联三个弯月北玉怖。<br>
+👉犀角形玉杯<br>
+<img src="https://haocw.github.io/post-images/1650780357617.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780373573.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780383379.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780394277.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780417920.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780429338.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780508929.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780520362.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780531806.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780540776.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780551875.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780559539.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650780569126.jpg" alt="" loading="lazy"><br>
+杯形似犀牛角，汉代认为犀牛角酒杯可以溶解毒物。杯身雕刻一尖嘴夔龙，龙头为浅浮雕，龙身逐渐凸起为高浮雕，杯底为圆雕，多种雕刻技法集于一身，堪称汉玉之绝品。<br>
+<img src="https://haocw.github.io/post-images/1650781347358.jpg" alt="" loading="lazy"><br>
+📕2002年，国家文物局明确规定禁止出境展出的64件/套的文物名录中，就有广州市南越王墓出土文物的一套一件入选，分别是漆木屏风铜构件和犀角形玉杯。其中，这件犀角形玉杯堪称独一无二的汉代玉器精品。<br>
+玉杯使用的是一块上等的青玉玉料，经过掏膛、圆雕、透雕和浮雕等工艺，最终形成了上宽下窄的犀牛角造型，但底部并不似其他玉杯平底，故而无法单独直立于平面上。玉杯杯身呈半透明状，局部有红褐色浸斑，仿犀角形，中空。纹饰自口沿处为一立姿夔龙向后展开，纹样绕着器身回环卷缠，逐渐高起，由浅浮雕过渡到高浮雕，底部则蜿蜒呈圆雕歧尾状。<br>
+在南越王墓中，犀牛的形象出现在两处，除了犀角杯以犀角为造型外，还有一件作为墓主人组玉佩构件的犀形璜。《史记·货殖列传》《汉书·地理志下》中均有关于岭南犀牛的记载。秦汉时期，犀曾被列为岭南重要的经济物资，在赵佗向汉廷进贡的礼品清单中也出现了“犀角十”的字眼。结合南越王墓中出土的这两件犀牛造型玉器，可见两千多年前的汉代岭南仍有犀牛的踪迹，而这只犀角形玉杯极有可能是当地工匠借鉴了犀牛角造型后的一种尝试。<br>
+在我国目前所见出土的高古玉杯中，只有这件玉杯是以犀牛角为造型的，故极为珍贵。但这样尖底的饮用器具要如何使用和放置呢？通过古代的图像资料我们可知，先秦及汉朝均有手持角杯饮酒的风俗，因此犀角形玉杯极有可能是一种捧于手中、须一饮而尽后才能放下的饮酒器。<br>
+👉八节铁芯龙虎玉带钩<br>
+<img src="https://haocw.github.io/post-images/1650938442164.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650938466813.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1650938486124.jpg" alt="" loading="lazy"><br>
+由一根铁芯连8节玉组成，钩首为虎头，钩尾为龙头。通体圆雕。铁芯锈蚀，局部形成深褐色斑。这种铁芯玉带钩，在秦汉玉带钩中并不多见。<br>
+📕《淮南子》有云：“满堂之坐，视钩而异。”一语道出了其在古代社会中身份标识的作用。按学者王莉的说法，至晚在战国以后，带钩作为装饰已形成一种风气，浮雕、错金、镶金、镂空、包金、鎏金等装饰手法渐次出现。小小的带钩，成了匠人炫技的艺术品。<br>
+📕中国古书中描述带钩的地方不少。其中最出名的当属管仲箭射齐桓公，被齐桓公的带钩挡住的故事。小小的服装配饰，救了未来的春秋霸主一命。庄子说的“窃钩者诛”，指的也是带钩，不是鱼钩、铁钩。<br>
+　　<br>
+　　玉带钩在西汉达到鼎盛期，东汉开始衰弱，魏晋以后被带扣替代，元明清则又有所回潮，不过玩赏性已经超越了实用性和标识性。它的演变过程，也是一个实用器物设计改进的过程，与人们的生活习惯、活动方式的变化息息相关。<br>
+　　<br>
+　　在带钩的鼎盛期西汉，无论形制、纹饰、艺术风格都在承袭前代的基础上，经由技术进步的加持，有了大大的发展。所以西汉时期的带钩工艺一改几千年来的单纯简练和一味追求形似的古朴作风，转向精雕细刻和生动传神。所以，这一时期的作品从技术和艺术性上来说，都是非常高水准的。<br>
+　　<br>
+　　魏晋南北朝以后，因腰间革带演变为佩挂各种随身物件的蹀躞带，带钩有相当长时间不再大量使用。当时用来扎束腰间带的，是一种环形带扣，其形或圆或方，大都附有扣针。用时将其卡入皮带的一端，另一端伸入扣内，然后插入扣针。可见这就是今天的皮带扣原理。这样的好处是比带钩方便，且牢固。所以经由这次设计改进之后，带钩很长一段时间不再大量使用。<br>
+延安大学历史文化与旅游学院学者朱青、杜林渊指出：“墓葬中带钩不同的摆放位置代表其不同作用，大致分为四种：一是革用带钩；二是配器用钩；三是配物用钩。还有一种带钩是专门用于随葬的，它一般放置在某一器物内。淮南发现的西汉北斗铜带钩和南越王墓中出土的北斗纹银带钩，都没有发现盒子，但不排除它们原本置于容器中、但容器已经朽坏的可能。这种带钩被视为祥瑞之物，用它随葬是为了辟邪驱祟。”<br>
+👉龙虎并体玉带钩<br>
+<img src="https://haocw.github.io/post-images/1651230576986.jpg" alt="" loading="lazy"><br>
+青白玉，玉质细密温润，钩首呈虎头形，未瑞为龙首，龙虎双体并列弯曲，龙张口咬环，虎伸爪探环，构成龙虎争环的造型。<br>
+👉透雕龙凤纹重环玉佩<br>
+<img src="https://haocw.github.io/post-images/1651230906572.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651230916913.jpg" alt="" loading="lazy"><br>
+玉佩分为内外环，内环透雕一游龙，龙爪伸出环外，外环透雕一凤鸟，站在龙爪之上。构图完美，工艺精湛，极具汉代浪漫和写实的特征，是汉玉中的艺木珍品，被选为西汉南越王博物馆的馆徽。<br>
+👉透雕游龙涡纹玉璧<br>
+<img src="https://haocw.github.io/post-images/1651413759586.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651413773028.jpg" alt="" loading="lazy"><br>
+出于墓主人的头罩上，青白玉雕成。壁内透雕一龙，壁面饰有涡纹。<br>
+📕冬奥会奖牌设计参考南越王墓出土同心圆纹玉璧<br>
+👉韘（she）形佩饰<br>
+<img src="https://haocw.github.io/post-images/1651414093403.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651414144958.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651414156705.jpg" alt="" loading="lazy"><br>
+墓中出士7件，5件位于南越王玉衣上，1件在左夫人组玉佩中，这1件为右夫人所有，应是单个的佩饰件。韘形佩上端饰变形鸟纹，纹饰布局独特，有别于另外6件鞢形佩饰。<br>
+👉铜箭镞（zu）<br>
+<img src="https://haocw.github.io/post-images/1651414521600.jpg" alt="" loading="lazy"><br>
+南越王墓出土了933个箭镞，分为4型7式。有的带倒刺和血槽。有的淬过毒。毒箭镞在中原地区，直到东汉才用于战争。<br>
+👉铜弩机<br>
+<img src="https://haocw.github.io/post-images/1651414550052.jpg" alt="" loading="lazy"><br>
+南越王墓出土铜弩机15件，其中9件有廓，为汉代新改进的弩机，能使箭射的更远。<br>
+👉熊形铜节约<br>
+<img src="https://haocw.github.io/post-images/1651414677797.jpg" alt="" loading="lazy"><br>
+墓中出土64件，分大中小三种，呈半球形，球面铸有熊首及熊爪，是马嘴上连接辔带和络管饰的器物。<br>
+👉铁衔镳<br>
+<img src="https://haocw.github.io/post-images/1651415323653.jpg" alt="" loading="lazy"><br>
+出土4件，镳与衔连用，贴在马口两边。<br>
+📕泡钉，镳，节约，当卢<br>
+<img src="https://haocw.github.io/post-images/1651415401496.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651415411856.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651415441975.jpg" alt="" loading="lazy"><br>
+👉错金铭文铜虎节<br>
+<img src="https://haocw.github.io/post-images/1651415480249.jpg" alt="" loading="lazy"><br>
+节，古代的信物之一，用于军事、外交、关津、邮驿等方面。持节人凭节证明自己外交使节或驿传官员的身份，具有关口通行、驿站食宿等用途。《周礼·地官·掌节》：“凡邦国之节：山国用虎节，土国用人节，泽国用龙节。”因此，虎节是山林之国使用的信物，目前所见的虎节多出自战国时期的楚地。</p>
+<p>根据虎节正面的铭文可知，持节官员为“车驲”一职，这与故宫博物院和湖南省博物馆收藏的传赁虎节之“传赁”为近似的官职。据考证，“车驲”和“传赁”是受雇于楚王、专职于驿传的官员，而虎节正是用于持节官员驿传过程中在驿站获取相应的食宿待遇。之所以确定虎节出自楚国，是因为铭文中的“驲”字与战国包山楚简上的文字一致，而该字不见于秦汉出土文字资料中，《左传》也曾记载“楚子乘驲会师于临品”，因此这件虎节应为战国楚地遗珍。</p>
+<p>古代中国将虎视为“山兽之君”，人们常将虎比喻为军中勇猛善战的将士，如“虎士”“虎贲”等词，虎符更是为人熟知的调兵遣将之凭证。尽管虎节与虎符的外形相似，但结构和用途却区别较大：虎符分为两件，分别掌握于君王和将帅之手，合二为一时可号令王师、威力无边；虎节则用作外交使节或驿传官员的凭证，肩负王命驰骋于山林之国。这件错金铭文铜虎节，正是虎的勇猛迅捷之体现。<br>
+南越王墓出土的虎节上游错金铭文“王命命车驲（Ri）”五字——在虎节的正面有错金铭文“王命车驲”四字，据专家辨认，其中“命”字下方的二横为重读标记，因此铭文应释读为五字——“王命命车驲”。为执行王命的凭证，是迄今发现唯一的错金铭文铜虎节。<br>
+👉乳香<br>
+<img src="https://haocw.github.io/post-images/1651415879381.jpg" alt="" loading="lazy"><br>
+原盛装于一漆盒内。经测定为树脂类香料，乳香具有很高的药用价值。主要产自阿拉伯半岛。<br>
+📕乳香（wiki）<br>
+名称：乳香的英文名frankincense源自古法语franc encens，意思是“上等熏香”。该说法现在还在许多欧洲语言中使用。乳香在中国汉朝至唐朝的文献中叫做薰毒、薰力、薰陆（熏陆）、薰陆香（熏陆香）。这些名称可能译自梵语名君杜噜（कुन्दुरु，kunduru）或波斯语、阿拉伯语名捆都而（کندر‎，kundur）。南朝梁时便有用香炉焚烧薰陆的记载。唐宋开始改称乳香或乳头香，得名于其树脂垂滴如乳。其他别名包括马尾香、天泽香、摩勒香、多伽罗香、杜噜香等。<br>
+历史：乳香在西方的宗教场合很常用。古埃及和古罗马的祭司曾大量使用乳香在神庙中制造异香缭绕的神秘气氛。古埃及遗留下来的记载中就记载了古埃及女法老哈特谢普苏特曾经亲自带领贸易商团前往庞特(今地理位置不明，可能是索马里)和庞特女皇，阿提女皇进行乳香贸易，并使用来制作化妆品。据说罗马皇帝尼禄在皇后波培娅·萨宾娜的丧礼上烧掉了足够供应罗马城一年份的乳香。乳香也是犹太教圣殿中所燃的香料之一，旧约全书前五卷中经常提到乳香。根据圣经《马太福音》第二章第11节记载，来自东方的贤士带了黄金、乳香和没药去伯利恒朝圣，将其奉献给降诞于人间的耶稣。现今天主教的重要弥撒中仍常用到乳香。</p>
+<p>由于基督教的发展，令乳香在埃及和欧洲的市场在4世纪之后逐渐缩小，以及6世纪也门马里卜大坝崩溃之后阿拉伯半岛上出现荒漠化的现象，被称为“无人地带”的鲁卜哈利沙漠中的众多绿洲消失，使得商旅马车更难以越过。再加上近东的帕提亚帝国境内游牧民族对商旅的抢夺，使得也门经阿曼至近东的“乳香之路”在兴盛了300年后出现衰落的趋势。但此后仍通过红海向拜占廷、中国出口大量的乳香。公元11世纪，阿曼开辟了至中国广州、泉州的“海上丝绸之路”，又称之为“海上乳香之路”，每年向中国出口数十吨以至上百吨乳香。北宋初年，泉州陈洪进遣使于乾德元年（963年）十二月，“贡白金千两，乳香、茶药皆万计。”真宗朝，皇帝尊崇道教，对乳香的消费大增，“道场科醮无虚日，永昼达夕，宝香不绝……袭庆奉祀，日赐供乳香一百二十斤”。宋徽宗崇宁年间，“神霄宫事起，土木之工尤盛。群道士无赖，官吏无敢少忤其意，月须币帛、珠砂、纸笔、沉香、乳香之类，不可数计，随欲随给。”<br>
+失落的古城邬巴尔在现在的阿曼，位于“香料之路”上，被认为是以前乳香交易的中心。邬巴尔在1990年代初期被重新发现，现在正在作考古挖掘中。<br>
+用途：古代将乳香用于宗教祭典，也当作熏香料（制造熏香、精油的原料）使用。也是中药的一种外科和内科药材，用于止痛、化瘀、活血，乳香“性温，疗耳聋、中风、口噤、妇人血风。能发酒治风，冷止大肠，泄僻疗诸疮疖，令内消。”。赵汝适在《诸蕃志》卷下《乳香》载：“乳香，一名薫陆香，出大食之麻啰拔、施曷、奴发三国深山穷谷中。其树大概类榕，以斧斫株，脂溢于外，结而成香，聚而为块”。在西方的文献纪载中，乳香用做消炎、杀菌、镇定，促进细胞再生，现代也逐渐有人使用一滴乳香精油涂抹脸部，抗皱。可抗发炎、抗关节炎、抗霉菌和抗细菌。局部使用于疼痛的缓解上，可降低胆固醇、保护肝脏。对于关节炎、痛风、下背痛、肌炎以及纤维肌痛症有益。帮助修复因发炎所造成的血管伤害。在传统上可以使用来治疗肥胖、腹泻、肺部疾病、钱癣以及疖。<br>
+👉船纹铜提筒<br>
+<img src="https://haocw.github.io/post-images/1651416388805.jpg" alt="" loading="lazy"><br>
+提筒是古代越族的盛储器。墓中出土铜提筒共9件，这件最为精美。筒身有四组船纹，四船首尾相连，高高翘起。船中有弓形大橹，显然是能远航的海船。图案反应了一支船队凯旋杀俘的场景。<br>
+📕船纹线图<br>
+<img src="https://haocw.github.io/post-images/1651463649741.jpeg" alt="" loading="lazy"><br>
+这些船前后相接，首尾高翘，船体明显绘出甲板，船内分隔成5舱或6舱，满载着战利品。每船上有5位羽人，头戴羽冠，上身赤裸，下身穿羽毛状短裙。第二位羽人都坐于一器物上，似在敲鼓或演奏某种乐器；第三位羽人都一手执短兵刃，一手抓持一俘虏；第五位羽人都在操持着一条大弧度狭长物体；第一和第四位羽人的动作则每艘船不同，或执弓箭或执钺。船的前后及下方还有海龟、海鱼、鸟等动物。<br>
+据推测，每艘船上第五位羽人操持的狭长工具应为当时的尾橹，这是目前关于橹的最早形象证据。<br>
+橹至迟在汉代已出现，它比桨更高效、便捷，故有“一橹抵三桨”之说。橹变桨的间歇划水为连续划水，大大加快了船的航行速度，还兼有操纵和控制船舶航向的作用，是船舶推进工具的重大革新。<br>
+<img src="https://haocw.github.io/post-images/1651463686759.jpeg" alt="" loading="lazy"><br>
+橹的结构<br>
+综合分析，船纹展现的应该是战争凯旋之后欢庆的场景，也有人认为和祭祀水（海）神有关。船纹铜提筒的发现证明两千多年前，广州已拥有相当规模的造船能力与先进的技术水平，为今人了解秦汉时期岭南造船技术的发展提供了重要的图像参考。<br>
+👉绘画铜镜<br>
+<img src="https://haocw.github.io/post-images/1651462829996.jpg" alt="" loading="lazy"><br>
+共出土墓主人铜镜6枚，其中绘画铜镜4枚。此镜直径41厘米，是最大的一枚西汉绘画镜。<br>
+👉漆木屏风<br>
+<img src="https://haocw.github.io/post-images/1651494010118.jpg" alt="" loading="lazy"><br>
+👉人操蛇鎏金铜托座<br>
+<img src="https://haocw.github.io/post-images/1651494024010.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651494048732.jpg" alt="" loading="lazy"><br>
+出土两件，为承托与连接屏障与翼障的构件，可折合。托座的铜人为典型越人形象，短裤跣足，口咬、手抓、脚夹长蛇，四蛇相互绞缠，下接覆斗形底座，与力士俑形成三点支撑。<br>
+📕鎏金铜托座    托座中，跪坐的力士用口衔蛇，双手操蛇的造型，力士低鼻大眼、着短裤与短袖葛衣、跣足，从服饰、体态看为典型的越人无疑，而食蛇也是古代越人传统。<br>
+👉蟠龙鎏金铜托座<br>
+<img src="https://haocw.github.io/post-images/1651494082607.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651495509619.jpg" alt="" loading="lazy"><br>
+出土两件，为屏风左、右翼障的托座，用失蜡法铸成。有一龙二蛇三蛙组成，表现的是蛇缠蛙，龙踩蛇护蛙的场景。其中蛇、蛙是古越人的图腾，龙是中原人崇拜的四神之一。<br>
+📕蟠龙形托座。该托座由一条龙、两条蛇、三只青蛙组成，龙的四只足踩在一个由两条蛇组成的支座之上，支座为双蛇合体，蛇身各卷缠一只青蛙，龙的四肢微微下蹲，一只青蛙伏在龙口之中，前肢抓住龙口的边缘。“蛇、蛙曾是古越人图腾，龙是中原人崇拜的四神之一，蛇缠青蛙，龙踩住蛇保护青蛙，似乎在讲述某个传说中的图腾神话故事，反映了多民族观念习俗走向一体化的过程”。<br>
+👉蛇纹鎏金铜托座<br>
+<img src="https://haocw.github.io/post-images/1651494093845.jpg" alt="" loading="lazy"><br>
+出土两件。有3个扁长方形套筒连成“之”字形主体，托座由3条蛇组成，用以承托屏风的壁板和中门。<br>
+📕该托座正面1蛇背面2蛇互相绞缠，在右上角和左上角各有一组卷云纹带饰系于蛇身，又在绞缠的蛇体正中两面各连接着一个斜撑着地，与另一端下方的“亜”字形小础形成三点支撑。蛇是古代越人崇拜的图腾，卷云纹则颇有楚风，这是一件非常有地方特色的器物。<br>
+📕📕📕📕📕📕📕📕📕<br>
+屏风约出现于西周时期，在古代中国人的日常家居中使用十分普遍。从流传下来的古画图像和文字记录中可知，凡厅堂居室，只要有条件，多会设置屏风，由此还衍生出地屏风、榻上屏风、梳妆屏风、灯屏风等五花八门的式样，可区隔房室，可置于案头，各有功用。在广州象岗山南越王赵眜墓中，就曾出土有所见最早的西汉实用屏风，规模之宽博壮阔，装饰之精彩华美，堪称国宝级别。这件宝物，是汉、楚、越文化融合一体的典型实证，也是当时的中国文化多元而政治统一的历史见证。<br>
+📕朱雀蟠龙舞 金蛇力士缠<br>
+这座双面屏风左右对称，高1.80米、正面宽3米，等分3间，每间宽1米，左右的次间为固定屏壁，正中的明间为屏门，可以向后推开。两侧各有一页翼障，可作90度展开，成为一幅宽1米的翼障。屏风顶上两转角处各立1只铜铸的朱雀，两翼障上和屏门顶上各立双面铜兽首，翼障之下是托座。铜构件顶上都连着管状插座，铜朱雀的尾巴处还留有雉尾的羽根数条，附近的器物上也有雉羽残留，估计这些构件上原来都插有鸟羽作为装饰。屏门的顶部和翼障下面，都有鎏金的铜铸雕饰。两次间分别由人操蛇鎏金铜托座、蛇纹铜托座对称承托。</p>
+<p>屏风位置还采集到十来片厚约0.2厘米、长短宽窄不一的象牙片，在同出的屏风边框木条中，凹槽内贴着一片象牙片，由此得知屏风的壁板插入边框凹槽内，若有空隙，容易松动，就用这些象牙薄片填塞紧固。<br>
+屏风饰有数百枚鎏金铜泡钉，这给考古学者们设置了难题：每颗泡钉间距平均以9厘米计，正背两面的12个边框共饰泡钉608枚，但屏风上装饰的鎏金泡钉除去朽坏的，仍有658枚，多出的这50枚应该装在哪里呢？到目前都还没有答案。<br>
+📕红黑卷云纹 瑰丽世界观<br>
+楚地的漆器水平极高，“他说第二，谁敢说第一。”南越王墓中出土的漆器数量并不少，不过被发现时保存状况相对不太好，残损较多，许多装饰、材料等方面的细节也就永远遗失了。</p>
+<p>出土时屏风位置上朽余的残漆皮中，有少许在黑漆地上用红白二色描绘了卷云纹，可惜都已经碎如指甲大小。考古专家们认为，屏风两面共12面竖幅都可施彩画，画的是什么？无法知晓。今天陈列于西汉南越王博物馆中的复原品，是在黑地上满屏通绘了红色的卷云纹，堂皇大气，颇具王家风范。</p>
+<p>专家们在《西汉南越王墓多元文化研究》一书中指出，这种“红黑两色的卷云纹图案，具有鲜明的楚文化特点”。卷云纹图案在南越王墓中出土的漆器或相关配件上较为常见，如东耳室出土的原来应该装饰在大博局、漆案等之上的金、银片，就多呈卷云纹形状；室中出土的两三件疑为漆盒的漆器，黑漆皮上隐隐现出彩绘卷云纹；西耳室发现的漆木箱、漆盒、漆盆上，也都有云纹、卷云纹；东侧室发现的镶铜框漆案，漆木上钉满卷云纹银饰片；西侧室的马蹄形漆盒盒盖侧面，也可看出漆地朱绘卷云纹。</p>
+<p>这种“楚风”图案，也出现在墓室的壁画上。前室四周的墙壁、室顶以及南北两道石门和门楹上均发现有彩绘痕迹。朱红色和墨色彩绘的卷云纹图案遍布其上，笔触行云流水。</p>
+<p>《说文》曰：“云，山川之气也。”云纹是楚、汉漆绘中最常见的纹饰之一。汉受楚文化影响极大，漆绘云纹更加盛行。有学者认为这是因为汉人笃信人有灵魂，人间之外还有天上的世界。还有学者认为云纹与叶片状纹样、龙形图案等相关。这种神秘浪漫色彩、灵动虚幻的艺术形象充满着生命律动，让人不禁联想起屈原、宋玉诗歌里瑰丽的世界。<br>
+📕楚人入“楚庭” 楚风渐南越<br>
+南越王赵眜墓中出土的众多文物表明，在大约楚亡100年，秦亡84年后，楚文化对南越的影响仍然存在。春秋楚庄王时势力强大而成为霸主，彼时楚国疆域西到今陕西境内，北到河南南阳，东达钱塘江以北，南及岭南，涵盖的古民族组成和文化类型也非常丰富。</p>
+<p>南越国虽由秦军将领开国，但楚人经营南越地远较秦人久远， 若从楚共王“奄征南海”算起，至赵佗自王，已有350年左右；若从吴起相楚悼王“南平百越”算起，也有160余年之久。传说中广州最早的古称为“楚庭”，即表明了古人对楚越文化交流的认知。粤语的有些词可能就源自古楚语。楚地人群入南越，有学者推测首先是越过五岭越城、都庞、萌渚一带的低谷山口，经湘江、潇水、漓江、富江、贺江等水道，及今灵渠等当时的旱路构成的交通网，进入西江流域，此水路后经秦开拓、汉经营，早于梅岭古道而成为沟通五岭南北的发达水路，“两广”的称呼即起源于此；此外，还有一条主要线路是以连州为枢纽，主要经郴州经宜章、临武境入连州，也包括了很多岔路。</p>
+<p>楚文化对南越的影响，一方面经由迁徙岭南的古越人族群间接传入，一方面应也存在着两地之间的直接交流。物质层面的影响可由岭南出土的南越国时期文物得见一斑，精神层面的影响则更为深远。楚文化甚至通过两广地区继续向南传播，中南半岛发现的一些战国时期青铜器，即带有楚器特征。<br>
+失蜡法浇注托座之美<br>
+　人操蛇鎏金铜托座构件中，力士和蛇的形体均为自然的浑圆体，没有范缝痕迹。蛇与蛇、蛇与人缠绕处，均有蜡模的接痕和修痕，在河南省文物研究所李京华看来，这证明其为失蜡法铸造。分别做出力士俑和各条蛇的蜡模，再将其组合成为一体，经过造型、失蜡和焙烧，再将铜液浇注入内，即得到力士操蛇青铜托座。朱雀铜顶饰通体光滑无范痕，亦是精致的失蜡铸件。</p>
+<p>学者指出，失蜡法是我国三大传统铸造技术之一，特别适用于铸造形状复杂、分型困难的铸件，“它是古代中国在产品日趋复杂而陶范法无法满足的情况下出现的新型传统铸造法”。这种方法在近现代仍有使用。</p>
+<p>楚文化是一种“坚韧、乐观、开拓、创新、求变”的文化。<br>
+双面兽首铜顶饰<br>
+装饰于屏风上部横坊上。头顶出双角，额顶正中伸出一根圆管形插座，两肩和双耳向外伸展成相互绞缠的卷云纹样，终端各伸出一根圆管形插座，用以插羽毛。整件器物通体鎏金。</p>
+<p>📕朱雀铜顶饰</p>
+<p>在汉代，朱雀被视为主管南方之神，以朱雀为顶饰也反映了这一时期汉文化对岭南的影响。</p>
+<p>📕蟠龙形托座</p>
+<p>该托座由一条龙、两条蛇、三只青蛙组成，龙的四只足踩在一个由两条蛇组成的支座之上，支座为双蛇合体，蛇身各卷缠一只青蛙，龙的四肢微微下蹲，一只青蛙伏在龙口之中，前肢抓住龙口的边缘。“蛇、蛙曾是古越人图腾，龙是中原人崇拜的四神之一，蛇缠青蛙，龙踩住蛇保护青蛙，似乎在讲述某个传说中的图腾神话故事，反映了多民族观念习俗走向一体化的过程”。</p>
+<p>📕蛇纹托座</p>
+<p>该托座正面1蛇背面2蛇互相绞缠，在右上角和左上角各有一组卷云纹带饰系于蛇身，又在绞缠的蛇体正中两面各连接着一个斜撑着地，与另一端下方的“亜”字形小础形成三点支撑。蛇是古代越人崇拜的图腾，卷云纹则颇有楚风，这是一件非常有地方特色的器物。<br>
+人操蛇鎏金铜托座</p>
+<p>托座中，跪坐的力士用口衔蛇，双手操蛇的造型，力士低鼻大眼、着短裤与短袖葛衣、跣足，从服饰、体态看为典型的越人无疑，而食蛇也是古代越人传统。<br>
+👉骨雕天鹅<br>
+<img src="https://haocw.github.io/post-images/1651462945578.jpg" alt="" loading="lazy"><br>
+出土于包裹绘画铜镜的绢物残渣中，是器物上的装饰物。<br>
+📕📕📕📕📕📕📕📕📕<br>
+<img src="https://haocw.github.io/post-images/1651463090211.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651463103536.jpg" alt="" loading="lazy"><br>
+👉四连体铜熏炉<br>
+<img src="https://haocw.github.io/post-images/1651463195394.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651463204076.jpg" alt="" loading="lazy"><br>
+熏炉盒盖为田字形，揭开后盒内分为4分互不连通的小盒。可以同时放置多种香料。<br>
+在古代，中国从海外进口的货物以香料为大宗，因此海上丝绸之路也有“香料之路”的美誉。香料可用于熏燃、药用、食用等，来源主要为印度、东南亚、中东等地区。<br>
+早在汉代时，熏炉焚香已蔚然成风，当时使用的乳香、沉香、檀香等热带香料多来源于海外地区。汉墓中熏炉的大量出土，佐证了当时熏香风气的流行与香料贸易的繁盛。<br>
+👉五色药石<br>
+<img src="https://haocw.github.io/post-images/1651493200968.jpg" alt="" loading="lazy"><br>
+俗称“五石散”，古代帝王信其可延年益寿，长生不老。墓中出土的雄黄、硫磺、赭石、紫水晶、绿松石等五色药石，为汉墓中首见。这些药石均有清热解毒的功效，但长期或大量服用，则会中毒。<br>
+📕📕📕📕📕📕📕📕📕<br>
+除了首次发现五色药石，南越王墓里还发现了一些可疑的铅丸和丹砂。在西耳室的药杵旁，发现了两堆528个小铅丸。铅丸直径1.8厘米，单个重31.5克。值得注意的是，这批药丸制作相当精细，大部分中间有一个小圆孔，不穿透。它们跟主棺室内与弩机一起出土的用作武器的12枚铅弹丸很不同：弹丸直径2.9厘米，重124～129克，有纵穿小孔，表面粗糙，氧化得很厉害，呈灰白色，多数开裂。</p>
+<p>当年的考古人员和专家学者都很疑惑：这批小铅丸具体是作什么用途的？经过考古考证，古代炼丹士炼制出丹砂（硫化汞）和铅用于内服，能产生显著的镇静安神、镇逆定喘功效，使人自觉神清气爽飘飘然，有的服用这种“金丹”的人死了，竟被视为“仙去”。南越国“死对头”长沙国，马王堆1号墓女主人女尸化验发现，体内含汞、铅量超过正常几十至数百倍。</p>
+<p>王芳与一批学者大胆推测，西耳室内小铅丸可能是南越王让人精心炼制的矿物丹药，其中还有一个物证是，在主棺室棺椁头端还发现了一颗与528枚小铅丸完全一致的小铅丸！因为丹药不是药性酷烈，就是大热大毒，所以吞服后产生一时兴奋，日久就会毒发。史载南越王虽然权倾岭南，但是体弱多病，40多岁就去世了。而其墓室内有大量五色药石和铅丸，赵目末很可能就是服食丹药剂中毒的受害者。但是，因为墓主人尸骨所剩无多，具体情况只能进一步检验文物药丸后才能确定。</p>
+<p>南越王养龟嗜酒求长寿</p>
+<p>据考古发现，南越王赵目末为了延年益寿，还养龟和嗜酒。中国食、养龟和以酒抗衰老，颐养天年的“古法”在南越国遗迹的出土文物中再次得到验证。</p>
+<p>在南越王墓后藏室，摆满了食物和炊具，铜提桶和一个异形壶里都有花龟和水鱼的遗迹。而王宫遗迹后花园的石池底淤泥层里，竟发现了数百只龟、鳖遗骸，叠压成层，厚达50厘米。其中有一个大鳖的背甲宽达44厘米，这么大的鳖，古人称之为“山瑞”。</p>
+<p>嗜酒是南越王赵目末的另一大爱好。墓中出土的盛酒器具不下十几种，几十件之多。古书记载，古人认为“酒是百药之长”，酒的古文是酉，酉字从 ，说明酒与医药在古人生活里有特殊的关系。大量酒器的出土，说明南越国宫廷酒风之盛。尤其是出土自墓主棺椁头箱用来盛的角形酒杯，用一整块青玉雕琢成犀牛角造型，相传犀牛角可以解毒物，玉造的虽不能解毒，但玉匠就借题发挥，匠心独运、细致打磨，2000多年后的今天，玉角杯仍放射出温和恬润的光泽。<br>
+👉圆饼形墨丸和石砚<br>
+<img src="https://haocw.github.io/post-images/1651493750931.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651493765335.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651493776208.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651493782963.jpg" alt="" loading="lazy"><br>
+<img src="https://haocw.github.io/post-images/1651493797634.jpg" alt="" loading="lazy"></p>
+
+            </div>
+            
+              <div class="reward-btn">
+                <div class="reward-btn-text">赞赏</div>
+              </div>
+            
+            
+              <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong class="language" data-lan="author">本文作者：</strong>
+      HHH__cw
+    </li>
+    <li class="post-copyright-link">
+      <strong class="language" data-lan="link">本文链接：</strong>
+      <a href="https://haocw.github.io/post/nan-yue-wang-bo-wu-guan/" title="南越王博物馆">https://haocw.github.io/post/nan-yue-wang-bo-wu-guan/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong class="language" data-lan="copyright">版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://haocw.github.io/tag/BGx-MDRuQ/"># ~记录有光__博物馆</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
       
+    </div>
+    <div class="nav-next">
       
-      
-      
+        <a class="nav-pc-next" title="广东省博物馆" href="https://haocw.github.io/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/">广东省博物馆</a>
+        <a class="nav-mobile-next" title="广东省博物馆" href="https://haocw.github.io/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
 </div>
-          </section>
+            
+            
+  
+
+          </div>
         </div>
       </div>
     </div>
@@ -1022,6 +1342,223 @@
     parent.insertBefore(aelem, next);
   });
 </script>
+    <div class="reward-mask" style="display: none;">
+  <div class="reward-relative">
+    <span class="close" aria-hidden="true">x</span>
+    <div class="reward-body">
+      <h2>感谢您的支持，我会继续努力的!</h2>
+      <div class="reward-img-box">
+        <div style="position: relative; width: 140px; height: 140px;">
+          
+          
+          
+        </div>
+      </div>
+      <p class="reward-word">扫码打赏，你说多少就多少</p>
+      <p class="reward-tip"> </p>
+    </div>
+    <div class="bottom">
+      
+      
+    </div>
+  </div>
+</div>
+<style>
+  .reward-mask {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000054;
+  }
+
+  .reward-relative {
+    position: relative;
+    width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 50%;
+    margin-top: -205px;
+  }
+
+  .reward-relative .close {
+    position: absolute;
+    right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #929292;
+  }
+
+  .reward-body {
+    padding: 40px 20px 20px;
+  }
+
+  .bottom {
+    display: flex;
+  }
+
+  .reward-btn {
+    text-align: center;
+  }
+
+  .reward-btn-text {
+    display: inline-block;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: #ff9734;
+    color: #FFF;
+    margin-top: 20px;
+  }
+
+  .pay-text {
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    transition: all .2s linear;
+  }
+
+  .pay-text:hover {
+    background-color: #a5a5a536;
+  }
+
+  .reward-body h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
+  .reward-body h2:after,
+  .reward-body h2:before {
+    font-family: Arial, Helvetica, sans-serif;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    font-style: normal;
+    color: #eee;
+    font-size: 80px;
+    position: absolute;
+    top: 20px;
+  }
+
+  .reward-body h2:before {
+    content: '\201c';
+    left: 50px;
+  }
+
+  .reward-body h2:after {
+    content: '\201d';
+    right: 80px;
+  }
+
+  .reward-img-box {
+    display: inline-block;
+    padding: 10px;
+    border: 6px solid #ea5f00;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+  }
+
+  .reward-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .reward-relative {
+      height: 100%;
+      top: 0px;
+      margin-top: 0;
+      width: auto;
+    }
+
+    .reward-relative .bottom {
+      flex-direction: column;
+    }
+
+    .reward-relative .pay-text {
+      width: 80%;
+      margin: 5px auto;
+      border: 1px solid silver;
+      padding: 6px;
+      border-radius: 4px;
+    }
+
+    .reward-body h2:after {
+      right: 40px;
+    }
+
+    .reward-body h2:after,
+    .reward-body h2:before {
+      font-size: 60px;
+    }
+
+    .reward-body h2:before {
+      left: 20px;
+    }
+  }
+</style>
+<script>
+  !function () {
+    var mask = document.querySelector('.reward-mask');
+    let close = document.querySelector('.reward-relative .close');
+    let rewardBtn = document.querySelector('.reward-btn');
+
+    let zfb = document.querySelector('#zfb'),
+      wx = document.querySelector('#wx'),
+      zfbBtn = document.querySelector('#zfbBtn'),
+      wxBtn = document.querySelector('#wxBtn');
+
+    if (zfbBtn && wxBtn) {
+      zfbBtn.addEventListener('click', () => {
+        jQuery.Velocity(zfb, 'transition.slideLeftIn', {
+          duration: 400
+        });
+        jQuery.Velocity(wx, 'transition.slideRightOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+
+      wxBtn.addEventListener('click', () => {
+        jQuery.Velocity(wx, 'transition.slideRightIn', {
+          duration: 400
+        });
+        jQuery.Velocity(zfb, 'transition.slideLeftOut', {
+          display: 'none',
+          duration: 400
+        });
+      });
+    }
+
+    rewardBtn.addEventListener('click', (e) => {
+      jQuery.Velocity(mask, 'transition.slideDownIn', {
+        duration: 400
+      })
+    });
+
+    close.addEventListener('click', (e) => {
+      e.preventDefault();
+      jQuery.Velocity(mask, 'transition.slideUpOut', {
+        duration: 400
+      })
+    })
+  }()
+</script>
+
   </div>
 </body>
 
@@ -1942,6 +2479,5 @@
 
   <div class="snow-container"></div>
   <script color="0,205,205" pointer-events="auto" zIndex="-1" opacity='0.7' count="99" src="/media/js/bg/canvas-nest.js"></script>
-
 
 </html>
