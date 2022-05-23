@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="黑暗中独影">
+<meta name="theme-color" content="#212529">
+<title>HHH_hhh</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1652364708961">
+<link rel="stylesheet" href="/media/css/pisces.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.loli.net/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/media/js/jquery.js"></script>
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>HHH_hhh</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">黑暗中的独影</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags" target="_self">
+                  <i class="fa fa-globe"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about" target="_self">
+                  <i class="fa fa-globe"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">HHH__cw</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">4</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+  
+  
+
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'pisces';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          ~记录有光_见闻
+          <small class="language" data-lan="tag">标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="http://localhost:4000/post/xi-bei-xing/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              01-28
+              <small>西京自有麒麟阁，画向功臣卫霍间—西北行</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <center id="runTimeBox">
+      已运行:<span id="run_time"></span>
+    </center>
+    <span id="busuanzi_container_site_pv">浏览数:<span id="busuanzi_value_site_pv"></span> 次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">访客数:<span id="busuanzi_value_site_uv"></span> 人</span>
+
+    <script>
+      BirthDay = new Date('');
+      if (BirthDay.getTime()) {
+        function runTime() {
+          str = "";
+          today = new Date();
+          timeold = today.getTime() - BirthDay.getTime();
+          msPerDay = 24 * 60 * 60 * 1000;
+          e_daysold = timeold / msPerDay;
+          daysold = Math.floor(e_daysold);
+          str += daysold + "天";
+          return str;
+        }
+        setInterval(function () {
+          $("#run_time").html(runTime());
+        }, 1000);
+      } else {
+        document.querySelector('.footer').removeChild(document.querySelector('#runTimeBox'));
+      }
+    </script>
+    <div class="poweredby">
+      
+    </div>
+  </footer>
+  
+    
+        <div class="pisces back-to-top" id="back_to_top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span class="scrollpercent"> <span id="back_to_top_text">0</span>% </span>
+            
+        </div>
+        
+                  
+                    
+<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
+<div class="box-scale">
+  <div id="landlord" style="left: 5px;bottom: px;"
+    data-key="">
+    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
+    
+
+      <div class="message" style="opacity:0"></div>
+      <div class="live_talk_input_body">
+        <div class="live_talk_input_name_body">
+          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
+            placeholder="你的名字" />
+        </div>
+        <div class="live_talk_input_text_body">
+          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
+            placeholder="要和我聊什么呀？" />
+          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
+        </div>
+      </div>
+      <input name="live_talk" id="live_talk" value="1" type="hidden" />
+      <div class="live_ico_box">
+        <div class="live_ico_item type_info" id="showInfoBtn"></div>
+        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
+        
+        <div class="live_ico_item type_music" id="musicButton"></div>
+        
+        <div class="live_ico_item type_youdu" id="youduButton"></div>
+        <div class="live_ico_item type_quit" id="hideButton"></div>
+        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
+        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
+        <input id="duType" value="douqilai" type="hidden">
+        
+        <input name="live2dBGM" value="" type="hidden">
+        
+      </div>
+    
+  </div>
+</div>
+<div id="open_live2d">召唤看板娘</div>
+<script>
+  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
+  let landlord = document.querySelector('#landlord');
+  var apiKey = landlord.dataset.key;
+</script>
+<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
+<script>
+	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
+	var norunFlag = false;
+
+	for (var i = 0; i < norunAI.length; i++) {
+		if (userAgent.indexOf(norunAI[i]) > -1) {
+			norunFlag = true;
+			break;
+		}
+	}
+
+	if (!window.WebGLRenderingContext) {
+		norunFlag = true;
+	}
+
+	if (!norunFlag) {
+		var hitFlag = false;
+		var AIFadeFlag = false;
+		var liveTlakTimer = null;
+		var sleepTimer_ = null;
+		var AITalkFlag = false;
+		var talkNum = 0;
+		(function () {
+			function renderTip(template, context) {
+				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
+				return template.replace(tokenReg, function (word, slash1, token, slash2) {
+					if (slash1 || slash2) {
+						return word.replace('\\', '');
+					}
+					var variables = token.replace(/\s/g, '').split('.');
+					var currentObject = context;
+					var i, length, variable;
+					for (i = 0, length = variables.length; i < length; ++i) {
+						variable = variables[i];
+						currentObject = currentObject[variable];
+						if (currentObject === undefined || currentObject === null) return '';
+					}
+					return currentObject;
+				});
+			}
+
+			String.prototype.renderTip = function (context) {
+				return renderTip(this, context);
+			};
+
+			var re = /x/;
+			re.toString = function () {
+				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
+				return '';
+			};
+
+			$(document).on('copy', function () {
+				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+			});
+
+			function initTips() {
+				$.ajax({
+					cache: true,
+					url: message_Path + 'message.json',
+					dataType: "json",
+					success: function (result) {
+						$.each(result.mouseover, function (index, tips) {
+							$(tips.selector).mouseover(function () {
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+								talkValTimer();
+								clearInterval(liveTlakTimer);
+								liveTlakTimer = null;
+							});
+							$(tips.selector).mouseout(function () {
+								showHitokoto();
+								if (liveTlakTimer == null) {
+									liveTlakTimer = window.setInterval(function () {
+										showHitokoto();
+									}, 15000);
+								};
+							});
+						});
+						$.each(result.click, function (index, tips) {
+							$(tips.selector).click(function () {
+								if (hitFlag) {
+									return false
+								}
+								hitFlag = true;
+								setTimeout(function () {
+									hitFlag = false;
+								}, 8000);
+								var text = tips.text;
+								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
+								text = text.renderTip({ text: $(this).text() });
+								showMessage(text, 3000);
+							});
+							clearInterval(liveTlakTimer);
+							liveTlakTimer = null;
+							if (liveTlakTimer == null) {
+								liveTlakTimer = window.setInterval(function () {
+									showHitokoto();
+								}, 15000);
+							};
+						});
+					}
+				});
+			}
+			initTips();
+
+			var text;
+			if (document.referrer !== '') {
+				var referrer = document.createElement('a');
+				referrer.href = document.referrer;
+				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
+				var domain = referrer.hostname.split('.')[1];
+				if (domain == 'baidu') {
+					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'so') {
+					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				} else if (domain == 'google') {
+					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			} else {
+				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
+					var now = (new Date()).getHours();
+					if (now > 23 || now <= 5) {
+						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
+					} else if (now > 5 && now <= 7) {
+						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
+					} else if (now > 7 && now <= 11) {
+						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
+					} else if (now > 11 && now <= 14) {
+						text = '中午了，工作了一个上午，现在是午餐时间！';
+					} else if (now > 14 && now <= 17) {
+						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
+					} else if (now > 17 && now <= 19) {
+						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
+					} else if (now > 19 && now <= 21) {
+						text = '晚上好，今天过得怎么样？';
+					} else if (now > 21 && now <= 23) {
+						text = '已经这么晚了呀，早点休息吧，晚安~~';
+					} else {
+						text = '嗨~ 快来逗我玩吧！';
+					}
+				} else {
+					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+				}
+			}
+			showMessage(text, 12000);
+		})();
+
+		liveTlakTimer = setInterval(function () {
+			showHitokoto();
+		}, 15000);
+
+		function showHitokoto() {
+			if (sessionStorage.getItem("Sleepy") !== "1") {
+				if (!AITalkFlag) {
+					$.getJSON('https://v1.hitokoto.cn/', function (result) {
+						talkValTimer();
+						showMessage(result.hitokoto, 0);
+					});
+				}
+			} else {
+				hideMessage(0);
+				if (sleepTimer_ == null) {
+					sleepTimer_ = setInterval(function () {
+						checkSleep();
+					}, 200);
+				}
+			}
+		}
+
+		function checkSleep() {
+			var sleepStatu = sessionStorage.getItem("Sleepy");
+			if (sleepStatu !== '1') {
+				talkValTimer();
+				showMessage('你回来啦~', 0);
+				clearInterval(sleepTimer_);
+				sleepTimer_ = null;
+			}
+		}
+
+		function showMessage(text, timeout) {
+			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
+			$('.message').stop();
+			$('.message').html(text);
+			$('.message').fadeTo(200, 1);
+			//if (timeout === null) timeout = 5000;
+			//hideMessage(timeout);
+		}
+		function talkValTimer() {
+			$('#live_talk').val('1');
+		}
+
+		function hideMessage(timeout) {
+			//$('.message').stop().css('opacity',1);
+			if (timeout === null) timeout = 5000;
+			$('.message').delay(timeout).fadeTo(200, 0);
+		}
+
+		function initLive2d() {
+			$('#hideButton').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "0");
+					$('#landlord').fadeOut(200);
+					$('#open_live2d').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#open_live2d').on('click', function () {
+				if (AIFadeFlag) {
+					return false;
+				} else {
+					AIFadeFlag = true;
+					localStorage.setItem("live2dhidden", "1");
+					$('#open_live2d').fadeOut(200);
+					$('#landlord').delay(200).fadeIn(200);
+					setTimeout(function () {
+						AIFadeFlag = false;
+					}, 300);
+				}
+			});
+			$('#youduButton').on('click', function () {
+				if ($('#youduButton').hasClass('doudong')) {
+					var typeIs = $('#youduButton').attr('data-type');
+					$('#youduButton').removeClass('doudong');
+					$('body').removeClass(typeIs);
+					$('#youduButton').attr('data-type', '');
+				} else {
+					var duType = $('#duType').val();
+					var duArr = duType.split(",");
+					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
+
+					$('#youduButton').addClass('doudong');
+					$('#youduButton').attr('data-type', dataType);
+					$('body').addClass(dataType);
+				}
+			});
+			if (apiKey) {
+				$('#showInfoBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "0") {
+						return
+					} else {
+						$('#live_statu_val').val("0");
+						$('.live_talk_input_body').fadeOut(500);
+						AITalkFlag = false;
+						showHitokoto();
+						$('#showTalkBtn').show();
+						$('#showInfoBtn').hide();
+					}
+				});
+				$('#showTalkBtn').on('click', function () {
+					var live_statu = $('#live_statu_val').val();
+					if (live_statu == "1") {
+						return
+					} else {
+						$('#live_statu_val').val("1");
+						$('.live_talk_input_body').fadeIn(500);
+						AITalkFlag = true;
+						$('#showTalkBtn').hide();
+						$('#showInfoBtn').show();
+
+					}
+				});
+				$('#talk_send').on('click', function () {
+					var info_ = $('#AIuserText').val();
+					var userid_ = $('#AIuserName').val();
+					if (info_ == "") {
+						showMessage('写点什么吧！', 0);
+						return;
+					}
+					if (userid_ == "") {
+						showMessage('聊之前请告诉我你的名字吧！', 0);
+						return;
+					}
+					showMessage('思考中~', 0);
+					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
+					$.ajax({
+						type: "get",
+						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
+						dataType: "json",
+						success: function (res) {
+							talkValTimer();
+							showMessage(res.text, 0);
+							$('#AIuserText').val("");
+							sessionStorage.setItem("live2duser", userid_);
+						},
+						error: function (e) {
+							talkValTimer();
+							showMessage('似乎有什么错误，请和站长联系！', 0);
+						}
+					});
+				});
+			} else {
+				$('#showInfoBtn').hide();
+				$('#showTalkBtn').hide();
+			}
+			//获取音乐信息初始化
+			var bgmListInfo = $('input[name=live2dBGM]');
+			if (bgmListInfo.length == 0) {
+				$('#musicButton').hide();
+			} else {
+				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+				var bgmPlayTime = 0;
+				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
+				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
+				if (live2dBGM_Num) {
+					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
+						bgmPlayNow = parseInt(live2dBGM_Num);
+					}
+				}
+				if (live2dBGM_PlayTime) {
+					bgmPlayTime = parseInt(live2dBGM_PlayTime);
+				}
+				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
+				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
+				$('#live2d_bgm').attr('src', live2dBGMSrc);
+				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
+				$('#live2d_bgm')[0].volume = 0.5;
+				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
+				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
+				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
+					$('#live2d_bgm')[0].play();
+					$('#musicButton').addClass('play');
+				}
+				sessionStorage.setItem("live2dBGM_WindowClose", '1');
+				$('#musicButton').on('click', function () {
+					if ($('#musicButton').hasClass('play')) {
+						$('#live2d_bgm')[0].pause();
+						$('#musicButton').removeClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '1');
+					} else {
+						$('#live2d_bgm')[0].play();
+						$('#musicButton').addClass('play');
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				});
+				window.onbeforeunload = function () {
+					sessionStorage.setItem("live2dBGM_WindowClose", '0');
+					if ($('#musicButton').hasClass('play')) {
+						sessionStorage.setItem("live2dBGM_IsPlay", '0');
+					}
+				}
+				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
+					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
+					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("ended", function () {
+					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
+					listNow++;
+					if (listNow > $('input[name=live2dBGM]').length - 1) {
+						listNow = 0;
+					}
+					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
+					sessionStorage.setItem("live2dBGM_Num", listNow);
+					$('#live2d_bgm').attr('src', listNewSrc);
+					$('#live2d_bgm')[0].play();
+					$('#live2d_bgm').attr('data-bgm', listNow);
+				});
+				document.getElementById('live2d_bgm').addEventListener("error", function () {
+					$('#live2d_bgm')[0].pause();
+					$('#musicButton').removeClass('play');
+					showMessage('音乐似乎加载不出来了呢！', 0);
+				});
+			}
+			//获取用户名
+			var live2dUser = sessionStorage.getItem("live2duser");
+			if (live2dUser !== null) {
+				$('#AIuserName').val(live2dUser);
+			}
+			//获取位置
+			var landL = sessionStorage.getItem("historywidth");
+			var landB = sessionStorage.getItem("historyheight");
+			if (landL == null || landB == null) {
+				landL = '5px'
+				landB = '0px'
+			}
+			$('#landlord').css('left', landL + 'px');
+			$('#landlord').css('bottom', landB + 'px');
+			//移动
+			function getEvent() {
+				return window.event || arguments.callee.caller.arguments[0];
+			}
+			var smcc = document.getElementById("landlord");
+			var moveX = 0;
+			var moveY = 0;
+			var moveBottom = 0;
+			var moveLeft = 0;
+			var moveable = false;
+			var docMouseMoveEvent = document.onmousemove;
+			var docMouseUpEvent = document.onmouseup;
+			smcc.onmousedown = function () {
+				var ent = getEvent();
+				moveable = true;
+				moveX = ent.clientX;
+				moveY = ent.clientY;
+				var obj = smcc;
+				moveBottom = parseInt(obj.style.bottom);
+				moveLeft = parseInt(obj.style.left);
+				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
+					window.getSelection().removeAllRanges();
+				}
+				document.onmousemove = function () {
+					if (moveable) {
+						var ent = getEvent();
+						var x = moveLeft + ent.clientX - moveX;
+						var y = moveBottom + (moveY - ent.clientY);
+						obj.style.left = x + "px";
+						obj.style.bottom = y + "px";
+					}
+				};
+				document.onmouseup = function () {
+					if (moveable) {
+						var historywidth = obj.style.left;
+						var historyheight = obj.style.bottom;
+						historywidth = historywidth.replace('px', '');
+						historyheight = historyheight.replace('px', '');
+						sessionStorage.setItem("historywidth", historywidth);
+						sessionStorage.setItem("historyheight", historyheight);
+						document.onmousemove = docMouseMoveEvent;
+						document.onmouseup = docMouseUpEvent;
+						moveable = false;
+						moveX = 0;
+						moveY = 0;
+						moveBottom = 0;
+						moveLeft = 0;
+					}
+				};
+			};
+		}
+		$(document).ready(function () {
+			var AIimgSrc = [];
+			let chooseLive2d = 'histoire'
+			if (chooseLive2d === 'histoire') {
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
+				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
+			} else if (chooseLive2d === 'rem') {
+				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
+			} else if (chooseLive2d === 'aoba') {
+				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
+			} else if (chooseLive2d === 'hijiki') {
+				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
+			} else if (chooseLive2d === 'tororo') {
+				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
+			}
+			var images = [];
+			var imgLength = AIimgSrc.length;
+			var loadingNum = 0;
+			for (var i = 0; i < imgLength; i++) {
+				images[i] = new Image();
+				images[i].src = AIimgSrc[i];
+				images[i].onload = function () {
+					loadingNum++;
+					if (loadingNum === imgLength) {
+						var live2dhidden = localStorage.getItem("live2dhidden");
+						if (live2dhidden === "0") {
+							setTimeout(function () {
+								$('#open_live2d').fadeIn(200);
+							}, 1300);
+						} else {
+							setTimeout(function () {
+								$('#landlord').fadeIn(200);
+							}, 1300);
+						}
+						let model = '';
+						if (chooseLive2d === 'histoire') {
+							model = message_Path + "model/histoire/model.json";
+						} else if (chooseLive2d === 'rem') {
+							model = message_Path + "model/rem/model.json";
+						} else if (chooseLive2d === 'aoba') {
+							model = message_Path + "model/aoba/model.json";
+						} else if (chooseLive2d === 'hijiki') {
+							model = message_Path + "model/hijiki/hijiki.model.json";
+						} else if (chooseLive2d === 'tororo') {
+							model = message_Path + "model/tororo/tororo.model.json";
+						}
+						setTimeout(function () {
+							loadlive2d("live2d", model);
+						}, 1000);
+						initLive2d();
+						images = null;
+					}
+				}
+			}
+		});
+	}
+</script>
+                      
+                        
+</div>
+<script>
+  let sideBarOpen = "sidebar-open";
+  let body = document.body;
+  let back2Top = document.querySelector("#back_to_top"),
+    back2TopText = document.querySelector("#back_to_top_text"),
+    drawerBox = document.querySelector("#drawer_box"),
+    rightSideBar = document.querySelector(".sidebar"),
+    viewport = document.querySelector("body");
+
+  function scrollAnimation(currentY, targetY) {
+    let needScrollTop = targetY - currentY;
+    let _currentY = currentY;
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10);
+      _currentY += dist;
+      window.scrollTo(_currentY, currentY);
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY);
+      } else {
+        window.scrollTo(_currentY, targetY);
+      }
+    }, 1);
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener("scroll", function (e) {
+    let percent =
+      (document.scrollingElement.scrollTop /
+        (document.scrollingElement.scrollHeight -
+          document.scrollingElement.clientHeight)) *
+      100;
+    if (percent > 1 && !back2Top.classList.contains("back-top-active")) {
+      back2Top.classList.add("back-top-active");
+    }
+    if (percent == 0) {
+      back2Top.classList.remove("back-top-active");
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  let hasCacu = false;
+  window.addEventListener("resize", function (e) {
+    calcuHeight();
+  });
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (
+      (!hasCacu && back2Top.classList.contains("pisces")) ||
+      back2Top.classList.contains("gemini")
+    ) {
+      let sideBar = document.querySelector(".sidebar");
+      let navUl = document.querySelector("#site_nav");
+      sideBar.style =
+        "margin-top:" + (navUl.offsetHeight + navUl.offsetTop + 15) + "px;";
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false,
+    MOTION_TIME = 300,
+    RIGHT_MOVE_DIS = "320px";
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll(".right-motion");
+    let right = drawerBox.classList.contains("right");
+
+    let transitionDir = right
+      ? "transition.slideRightIn"
+      : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingRight: "0px",
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS,
+      };
+      closeProp = {
+        paddingLeft: "0px",
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      jQuery.Velocity(rightSideBar, "stop");
+      jQuery.Velocity(viewport, "stop");
+      jQuery.Velocity(rightMotions, "stop");
+      if (open) {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: RIGHT_MOVE_DIS,
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, transitionDir, {});
+            },
+          }
+        );
+        jQuery.Velocity(viewport, openProp, {
+          duration: MOTION_TIME,
+        });
+      } else {
+        jQuery.Velocity(
+          rightSideBar,
+          {
+            width: "0px",
+          },
+          {
+            duration: MOTION_TIME,
+            begin: function () {
+              jQuery.Velocity(rightMotions, {
+                opacity: 0,
+              });
+            },
+          }
+        );
+        jQuery.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME,
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle("muse-line");
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    };
+  }
+
+  // 链接跳转
+  let newWindow = "false";
+  if (newWindow === "true") {
+    let links = document.querySelectorAll(".post-body a");
+    links.forEach((item) => {
+      if (!item.classList.contains("btn")) {
+        item.setAttribute("target", "_blank");
+      }
+    });
+  }
+
+  let faSearch = document.querySelector("#fa_search");
+  faSearch &&
+    faSearch.addEventListener("click", function () {
+      document.querySelector("#search_mask").style = "";
+    });
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+  // 离开当前页title变化
+  var leaveTitle = "";
+  var normal_title = document.title;
+  if (leaveTitle) {
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState == "hidden") {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+</script>
+
+<link rel="stylesheet" href="/media/css/jquery.fancybox.css" />
+<script src="/media/js/jquery.fancybox.js"></script>
+
+<script>
+  let images = document.querySelectorAll(".section img");
+  images.forEach((image) => {
+    var parent = image.parentElement;
+    var next = image.nextElementSibling;
+    parent.removeChild(image);
+    var aelem = document.createElement("a");
+    aelem.href = image.src;
+    aelem.dataset["fancybox"] = "images";
+    aelem.dataset["rel"] = "fancybox-button";
+    aelem.classList.add("fancybox");
+    aelem.appendChild(image);
+    parent.insertBefore(aelem, next);
+  });
+</script>
+  </div>
+</body>
+
+  <div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/hu-nan-sheng-bo-wu-guan/"" data-c="
+          &lt;p&gt;🌈常设展厅:长沙马王堆汉墓陈列（三楼至一楼）&lt;br&gt;
+湖南人：三湘历史文化陈列（未去）&lt;br&gt;
+🌈临时展：王者归来——中国古代青铜器巡礼（一楼）赶上了小尾巴~&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1652364614960.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">湖南省博物馆</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/nan-yue-wang-bo-wu-guan/"" data-c="
+          &lt;p&gt;🌈王宫展区—2022年3月26日&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650710256436.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+🌈王墓展区—2022年3月29日&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650710317582.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650710288767.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+🌈 背景：&lt;br&gt;
+📕南越国，又称为南越或南粤，在越南又称为赵朝。是前203年至前111年存在于岭南地区的一个国家，都城位于番禺（今广东省广州市）。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650710460031.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650711722221.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕南越国是秦朝将灭亡时，由南海郡尉赵佗起兵兼并桂林郡和象郡后于前203年建立。前196年，赵佗向西汉皇帝刘邦称臣，南越国成为西汉的一个“外臣”。前183年，因西汉临朝称制的吕后改变对南越国的政策，两国交恶，赵佗开始称帝，其后，闽越、夜郎等国皆臣属于南越国，南越国的势力影响范围扩张至顶峰。前179年，南越国与西汉修好，赵佗再次向西汉皇帝汉文帝称臣。前113年，南越国第四代君主赵兴因向西汉请求“内属”，而和丞相吕嘉发生争议。吕嘉杀死赵兴，立其兄赵建德为新君主，并与西汉对峙。前112年，西汉皇帝汉武帝出兵10万发动对南越国的战争，并在前111年将南越国灭亡。南越国共存在93年，历经五代君主。&lt;br&gt;
+☁️立国&lt;br&gt;
+📕前221年，秦国已经通过战争相继消灭了韩、赵、魏、楚、燕、齐六国，并建立了统一的中原王朝——秦朝，此时秦朝最大的威胁为北面的匈奴和南面的百越。秦始皇派遣屠睢率领50万秦军分五路进攻岭南和闽越的百越地区，当时的岭南和闽越还处于原始的部落联盟割据状态，四支最强的百越支系为南越、西瓯、骆越和闽越。秦军第一路在余干（今属江西省）集结，进攻闽越，攻陷后设立了闽中郡。第二路在南野（今江西省赣州市南康区南）扼守，对闽越和南越形成压迫之势。第三路占领了南越的番禺。第四路在九嶷山（今湖南省宁远县南）驻守，第五路在镡城（今湖南省怀化市内）附近的越城岭驻守，准备一起进攻西瓯。&lt;br&gt;
+与此同时，秦始皇派遣史禄负责运送粮饷，史禄率领士兵在湘水和漓水之间开始修筑灵渠，以其沟通长江和珠江水系，保障秦军的后勤供给。&lt;br&gt;
+📕&lt;img src=&#34;http://localhost:4000/post-images/1650711763349.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+秦军进攻西瓯初时很顺利，杀了西瓯的首领译吁宋。但西瓯的越人不肯屈服，逃入丛林推选出新的将领与秦军对抗。后来还发动夜袭大破秦军，将秦军统帅屠睢杀死。秦军受到重创，秦朝只好让秦军的另一将领赵佗改为守势。灵渠修通之后，前214年，秦始皇派遣赵佗（《史记》和《汉书》只记载了赵佗率领秦军第二次攻打岭南地区的百越。但亦有现代学者参考后世史书的说法，认为任嚣也和赵佗一起率领秦军第二次攻打岭南地区的百越。）率领秦军重新发动攻势，很快击溃了西瓯人的反抗，此时，岭南地区已完全纳入了秦朝的版图。同年，秦朝在岭南地区设立了南海、桂林、象三郡，任嚣被委任为南海尉。南海郡下设番禺、龙川、博罗、揭阳等数县，赵佗被委任为龙川令。&lt;br&gt;
+前210年，秦始皇病逝，秦二世即位。前209年，秦朝自秦始皇以来长期的暴政激起了戍卒陈胜、吴广等人的起义。接着项羽、刘邦等势力也纷纷起来反秦，中原陷入了一片混乱状态。陈胜吴广起义后不久，南海尉任嚣病重，他临死前把时任龙川令的赵佗召来，告诉赵佗南海郡傍山靠海、有险可据，可以建立国家以抵抗中原各起义军的侵犯，并当即颁布文书让赵佗接任南海尉的职务。不久，任嚣病亡，赵佗向南岭的横浦关（今广东省南雄市梅关附近）、阳山关（今广东省阳山县北）、湟溪关（今广东省阳山县和连州市交界处的连江边上）等各关口的军队传达了据险防守的指令，防止中原的起义军进犯，并借机杀了秦朝安置在南海郡的官吏们，换上自己的亲信。前206年，秦朝灭亡，此时桂林和象两郡的越人也趁机纷纷脱离隶属关系。古蜀国的王族后裔蜀泮在象郡以螺城（今越南河内市东英县内）为都城建有瓯骆国，自称“安阳王”。后来，赵佗派兵攻打安阳王，但久攻不下，于是让太子赵始假装降服于安阳王，并娶安阳王之女媚珠为妻，赵始从瓯骆国逃回后，赵佗再次出兵攻打安阳王并将其赶走，接着还兼并了桂林郡和象郡。赵佗考虑到象郡越人部落势力的强盛，析其为交趾、九真两郡，仅派两使者管理重大事务，日常事务仍由各部落首领自己管理。前203年，赵佗以番禺为都城在岭南地区建立南越国，自称“南越武王”。&lt;br&gt;
+☁️南越王博物馆—是南越国第二位统治者赵眜的陵墓（对汉称南越文王，对内称南越文帝）。南越国称帝的只有南越武帝——赵佗和南越文帝——赵眜。&lt;br&gt;
+📕赵眜死后，陵墓建在南越国都城番禺的西北角（今广州市解放北路的象岗山上），历经2000多年，始终没有受到侵扰。1983年在此地建象岗宾馆（即中国大酒店）时被发现，被称为“南越王墓”，在陵墓内共出土随葬品1000多件，被认为是岭南地区已发现的陵墓当中，规模最大，随葬品最多，墓主人身份最高的陵墓。陵墓内出土丝缕玉衣，玉衣内仅剩下已腐朽成粉末状的骨渣，只在玉衣的头罩部分尚有少许残颅骨片。该墓出土还出土“文帝行玺”金印，说明在他生前曾自封为“南越文帝”。1988年，在他陵墓的原址建成“西汉南越王墓博物馆”，对陵墓和出土文物进行保护。&lt;br&gt;
+📕关于南越文帝真实名字的考证&lt;br&gt;
+《史记》里一直把南越国第二代王“南越文帝”称为赵胡，但1983年“南越王墓”被挖掘后，在出土的印章中发现“赵眜”的玉印和“文帝行玺”的金印，经考古学家证实，确认了“赵眜”应该是《史记》所载的“赵胡”的真名，而“赵胡”可能是司马迁在编写《史记》时出现的错误；也有可能是班固的《汉书》在传抄中抄错，后人又根据《汉书》更正了《史记》中的“错字”，以致一错再错。&lt;br&gt;
+然而，也有一些学者对笔误一说提出了异议。学者余天炽、覃圣敏、蓝日勇、梁旭达、覃彩銮等人，在其所著的《古南越国史》中认为南越文帝名字不可能出现记载错误。他们认为，《史记》对在位时间最短的赵建德事迹记载都尤为详实，因此对南越文帝名字记载错误的偶然性不存在；而且文帝在位期间同汉朝交往频繁，名字的笔误更不可能。他们认为赵眜是赵佗的儿子、文帝赵胡的父亲（或者赵眜是赵佗的长孙、文帝赵胡的兄长），被赵佗立为太子，未即位就死去了。赵胡将赵眜生前使用的印章带入坟墓，以示缅怀之意。&lt;br&gt;
+👉文帝行玺金印&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650711901779.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712054711.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+本次无缘得见，待回京后再去一睹“真容”&lt;br&gt;
+👀该印长3.1厘米、宽3厘米、高1.8厘米、重148.5克，含金量98％。呈方形，田字方格，阴刻“文帝行玺”4字，小篆体。龙形花纹，形态逼真，利用龙身拱起的横穿以系组绶，也可作捉手。出土于墓主丝褛玉衣的胸部。它是中国考古发掘出土的首枚“皇帝”印玺，也是目前发现的最大西汉金印。&lt;br&gt;
+📕主棺室内&lt;br&gt;
+“文帝行玺”金印、“帝印”玉印、“泰子”金印、“赵眜”玉印等&lt;br&gt;
+东侧室是墓主四位殉葬夫人的葬所，出土了“右夫人玺”、“左夫人印”、“泰夫人印”等印章&lt;br&gt;
+👉“帝印”玉印&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712501596.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712524020.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712534594.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712568629.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+玉印的印文是阴刻篆书的“帝印”两个字，因墓室进水及年代久远，玉印被浸蚀成黄白色。印钮雕成螭虎形状，装饰有云纹。根据《史记》、《汉书》记载，南越国第一代王、第二代王都曾僭越称帝，在国内使用皇帝的礼仪。“帝印”玉印及封泥的出土是对这一史实有力的证据。这枚玉印是在墓主腰腹位置出土的九枚印章中的一枚。这九枚印玺原来是三个一组用小漆木盒盛放着，后来盒子朽烂掉了。玉印的印文是阴刻篆书的“帝印”两个字，因墓室进水及年代久远，玉印被浸蚀成黄白色。印钮雕成螭虎形状，装饰有云纹。&lt;br&gt;
+📕封泥&lt;br&gt;
+封泥又称泥封、芝泥，是秦朝至魏晋时期机密文件上的一种盖有印章的泥巴。当时文件大多写在简牍上，而简牍又是用绳子捆扎，那么封泥一般放在绳子的打结处，如果要拆开简牍，必须要挪动封泥。一旦封泥有动过的痕迹，便表示此文件有可能被人拆封。文件拆开后，为避免有人拿封泥私刻公章，封泥不能随意丢弃。随着纸张代替简牍成为书写材料，封泥开始退出历史舞台。&lt;br&gt;
+👉“泰子”金印&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712824201.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+本次无缘得见，待回京后再去一睹“真容”&lt;br&gt;
+👉丝缕玉衣&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650712914505.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+本件为复制品，原件在中国国家博物馆 《海字攸同--广州秦汉考古成果展》展出。&lt;br&gt;
+丝缕玉衣是南越国文帝赵眜的殓服，为中国目前出土完整的西汉玉衣中唯一的一套丝缕玉衣。&lt;br&gt;
+📕玉衣又名玉柙、玉匣，由大量玉片穿缀而成，是汉代皇帝和高级贵族专用的殓具。因编缀玉片的质料不同，分为金缕玉衣、银缕玉衣、铜缕玉衣和丝缕玉衣等。&lt;br&gt;
+📕在玉衣主人的手边位置，放置着一对类似野猪牙状的器物，名为玉觹（xi）。在两周时期，所见的觹多是玉制，到东周时代实用功能逐渐衰减，逐渐成为象征贵族身份、地位的一种配饰品。到了汉代，按丧葬习俗逝者入葬时，手里一定要握住一些东西。南越王墓出土的这两件玉觹，就是墓主殓葬时放在后人放在他手上的，作为“玉握”使用。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713403147.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉铜承盘高足玉杯&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713749093.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713764026.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713777370.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713790810.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650713807149.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+全杯由筒式高足杯、花瓣形玉托和铜承盘三部分组成，呈三龙拱怀之势，由金、银、玉、铜、木五种材料做成。杯为青玉质，圆筒形，杯体座足由另一玉料雕出。托架为青玉质，双面琢花，作出三片大型花瓣，花瓣间凸出三片小花蕾，中间有圆孔，玉杯放入孔中。玉瓣托架由三条金头银身的龙各含一花蕾，把托架举起。三龙下面为铜质承盘，为扁圆形。玉杯座足下有一木块垫承，出土于墓中棺椁头端。这件承盘高足杯可能是南越王生前用来承聚甘露、服用长生不老药的器具。&lt;br&gt;
+📕承露盘&lt;br&gt;
+考之史籍， 承露盘仙人是汉武帝建造的。汉武帝特好神仙之道。他遍寻海外仙洲及甘液玉英以求“长生不死”，为求得和渺茫的仙界达成一种神秘的“生命信息”上的契合，不惜斥重资去营建一系列接待仙家的建筑，承露盘仙人像为其中一项规模较大的工程。&lt;br&gt;
+👉鎏金铜框玉卮&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650779984607.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650779995912.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+卮是古代常用酒器，质地有银，铜、漆，玉、石、陶等，以玉厄最为珍贵。这件玉危由婆金铜框饮9块青玉片构成，底部为圆形玉片。漆木盖周边镇联三个弯月北玉怖。&lt;br&gt;
+👉犀角形玉杯&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780357617.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780373573.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780383379.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780394277.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780417920.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780429338.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780508929.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780520362.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780531806.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780540776.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780551875.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780559539.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650780569126.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+杯形似犀牛角，汉代认为犀牛角酒杯可以溶解毒物。杯身雕刻一尖嘴夔龙，龙头为浅浮雕，龙身逐渐凸起为高浮雕，杯底为圆雕，多种雕刻技法集于一身，堪称汉玉之绝品。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650781347358.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕2002年，国家文物局明确规定禁止出境展出的64件/套的文物名录中，就有广州市南越王墓出土文物的一套一件入选，分别是漆木屏风铜构件和犀角形玉杯。其中，这件犀角形玉杯堪称独一无二的汉代玉器精品。&lt;br&gt;
+玉杯使用的是一块上等的青玉玉料，经过掏膛、圆雕、透雕和浮雕等工艺，最终形成了上宽下窄的犀牛角造型，但底部并不似其他玉杯平底，故而无法单独直立于平面上。玉杯杯身呈半透明状，局部有红褐色浸斑，仿犀角形，中空。纹饰自口沿处为一立姿夔龙向后展开，纹样绕着器身回环卷缠，逐渐高起，由浅浮雕过渡到高浮雕，底部则蜿蜒呈圆雕歧尾状。&lt;br&gt;
+在南越王墓中，犀牛的形象出现在两处，除了犀角杯以犀角为造型外，还有一件作为墓主人组玉佩构件的犀形璜。《史记·货殖列传》《汉书·地理志下》中均有关于岭南犀牛的记载。秦汉时期，犀曾被列为岭南重要的经济物资，在赵佗向汉廷进贡的礼品清单中也出现了“犀角十”的字眼。结合南越王墓中出土的这两件犀牛造型玉器，可见两千多年前的汉代岭南仍有犀牛的踪迹，而这只犀角形玉杯极有可能是当地工匠借鉴了犀牛角造型后的一种尝试。&lt;br&gt;
+在我国目前所见出土的高古玉杯中，只有这件玉杯是以犀牛角为造型的，故极为珍贵。但这样尖底的饮用器具要如何使用和放置呢？通过古代的图像资料我们可知，先秦及汉朝均有手持角杯饮酒的风俗，因此犀角形玉杯极有可能是一种捧于手中、须一饮而尽后才能放下的饮酒器。&lt;br&gt;
+👉八节铁芯龙虎玉带钩&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650938442164.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650938466813.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650938486124.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+由一根铁芯连8节玉组成，钩首为虎头，钩尾为龙头。通体圆雕。铁芯锈蚀，局部形成深褐色斑。这种铁芯玉带钩，在秦汉玉带钩中并不多见。&lt;br&gt;
+📕《淮南子》有云：“满堂之坐，视钩而异。”一语道出了其在古代社会中身份标识的作用。按学者王莉的说法，至晚在战国以后，带钩作为装饰已形成一种风气，浮雕、错金、镶金、镂空、包金、鎏金等装饰手法渐次出现。小小的带钩，成了匠人炫技的艺术品。&lt;br&gt;
+📕中国古书中描述带钩的地方不少。其中最出名的当属管仲箭射齐桓公，被齐桓公的带钩挡住的故事。小小的服装配饰，救了未来的春秋霸主一命。庄子说的“窃钩者诛”，指的也是带钩，不是鱼钩、铁钩。&lt;br&gt;
+　　&lt;br&gt;
+　　玉带钩在西汉达到鼎盛期，东汉开始衰弱，魏晋以后被带扣替代，元明清则又有所回潮，不过玩赏性已经超越了实用性和标识性。它的演变过程，也是一个实用器物设计改进的过程，与人们的生活习惯、活动方式的变化息息相关。&lt;br&gt;
+　　&lt;br&gt;
+　　在带钩的鼎盛期西汉，无论形制、纹饰、艺术风格都在承袭前代的基础上，经由技术进步的加持，有了大大的发展。所以西汉时期的带钩工艺一改几千年来的单纯简练和一味追求形似的古朴作风，转向精雕细刻和生动传神。所以，这一时期的作品从技术和艺术性上来说，都是非常高水准的。&lt;br&gt;
+　　&lt;br&gt;
+　　魏晋南北朝以后，因腰间革带演变为佩挂各种随身物件的蹀躞带，带钩有相当长时间不再大量使用。当时用来扎束腰间带的，是一种环形带扣，其形或圆或方，大都附有扣针。用时将其卡入皮带的一端，另一端伸入扣内，然后插入扣针。可见这就是今天的皮带扣原理。这样的好处是比带钩方便，且牢固。所以经由这次设计改进之后，带钩很长一段时间不再大量使用。&lt;br&gt;
+延安大学历史文化与旅游学院学者朱青、杜林渊指出：“墓葬中带钩不同的摆放位置代表其不同作用，大致分为四种：一是革用带钩；二是配器用钩；三是配物用钩。还有一种带钩是专门用于随葬的，它一般放置在某一器物内。淮南发现的西汉北斗铜带钩和南越王墓中出土的北斗纹银带钩，都没有发现盒子，但不排除它们原本置于容器中、但容器已经朽坏的可能。这种带钩被视为祥瑞之物，用它随葬是为了辟邪驱祟。”&lt;br&gt;
+👉龙虎并体玉带钩&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651230576986.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+青白玉，玉质细密温润，钩首呈虎头形，未瑞为龙首，龙虎双体并列弯曲，龙张口咬环，虎伸爪探环，构成龙虎争环的造型。&lt;br&gt;
+👉透雕龙凤纹重环玉佩&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651230906572.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651230916913.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+玉佩分为内外环，内环透雕一游龙，龙爪伸出环外，外环透雕一凤鸟，站在龙爪之上。构图完美，工艺精湛，极具汉代浪漫和写实的特征，是汉玉中的艺木珍品，被选为西汉南越王博物馆的馆徽。&lt;br&gt;
+👉透雕游龙涡纹玉璧&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651413759586.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651413773028.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出于墓主人的头罩上，青白玉雕成。壁内透雕一龙，壁面饰有涡纹。&lt;br&gt;
+📕冬奥会奖牌设计参考南越王墓出土同心圆纹玉璧&lt;br&gt;
+👉韘（she）形佩饰&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414093403.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414144958.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414156705.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+墓中出士7件，5件位于南越王玉衣上，1件在左夫人组玉佩中，这1件为右夫人所有，应是单个的佩饰件。韘形佩上端饰变形鸟纹，纹饰布局独特，有别于另外6件鞢形佩饰。&lt;br&gt;
+👉铜箭镞（zu）&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414521600.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+南越王墓出土了933个箭镞，分为4型7式。有的带倒刺和血槽。有的淬过毒。毒箭镞在中原地区，直到东汉才用于战争。&lt;br&gt;
+👉铜弩机&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414550052.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+南越王墓出土铜弩机15件，其中9件有廓，为汉代新改进的弩机，能使箭射的更远。&lt;br&gt;
+👉熊形铜节约&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651414677797.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+墓中出土64件，分大中小三种，呈半球形，球面铸有熊首及熊爪，是马嘴上连接辔带和络管饰的器物。&lt;br&gt;
+👉铁衔镳&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415323653.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出土4件，镳与衔连用，贴在马口两边。&lt;br&gt;
+📕泡钉，镳，节约，当卢&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415401496.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415411856.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415441975.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉错金铭文铜虎节&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415480249.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+节，古代的信物之一，用于军事、外交、关津、邮驿等方面。持节人凭节证明自己外交使节或驿传官员的身份，具有关口通行、驿站食宿等用途。《周礼·地官·掌节》：“凡邦国之节：山国用虎节，土国用人节，泽国用龙节。”因此，虎节是山林之国使用的信物，目前所见的虎节多出自战国时期的楚地。&lt;/p&gt;
+&lt;p&gt;根据虎节正面的铭文可知，持节官员为“车驲”一职，这与故宫博物院和湖南省博物馆收藏的传赁虎节之“传赁”为近似的官职。据考证，“车驲”和“传赁”是受雇于楚王、专职于驿传的官员，而虎节正是用于持节官员驿传过程中在驿站获取相应的食宿待遇。之所以确定虎节出自楚国，是因为铭文中的“驲”字与战国包山楚简上的文字一致，而该字不见于秦汉出土文字资料中，《左传》也曾记载“楚子乘驲会师于临品”，因此这件虎节应为战国楚地遗珍。&lt;/p&gt;
+&lt;p&gt;古代中国将虎视为“山兽之君”，人们常将虎比喻为军中勇猛善战的将士，如“虎士”“虎贲”等词，虎符更是为人熟知的调兵遣将之凭证。尽管虎节与虎符的外形相似，但结构和用途却区别较大：虎符分为两件，分别掌握于君王和将帅之手，合二为一时可号令王师、威力无边；虎节则用作外交使节或驿传官员的凭证，肩负王命驰骋于山林之国。这件错金铭文铜虎节，正是虎的勇猛迅捷之体现。&lt;br&gt;
+南越王墓出土的虎节上游错金铭文“王命命车驲（Ri）”五字——在虎节的正面有错金铭文“王命车驲”四字，据专家辨认，其中“命”字下方的二横为重读标记，因此铭文应释读为五字——“王命命车驲”。为执行王命的凭证，是迄今发现唯一的错金铭文铜虎节。&lt;br&gt;
+👉乳香&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651415879381.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+原盛装于一漆盒内。经测定为树脂类香料，乳香具有很高的药用价值。主要产自阿拉伯半岛。&lt;br&gt;
+📕乳香（wiki）&lt;br&gt;
+名称：乳香的英文名frankincense源自古法语franc encens，意思是“上等熏香”。该说法现在还在许多欧洲语言中使用。乳香在中国汉朝至唐朝的文献中叫做薰毒、薰力、薰陆（熏陆）、薰陆香（熏陆香）。这些名称可能译自梵语名君杜噜（कुन्दुरु，kunduru）或波斯语、阿拉伯语名捆都而（کندر‎，kundur）。南朝梁时便有用香炉焚烧薰陆的记载。唐宋开始改称乳香或乳头香，得名于其树脂垂滴如乳。其他别名包括马尾香、天泽香、摩勒香、多伽罗香、杜噜香等。&lt;br&gt;
+历史：乳香在西方的宗教场合很常用。古埃及和古罗马的祭司曾大量使用乳香在神庙中制造异香缭绕的神秘气氛。古埃及遗留下来的记载中就记载了古埃及女法老哈特谢普苏特曾经亲自带领贸易商团前往庞特(今地理位置不明，可能是索马里)和庞特女皇，阿提女皇进行乳香贸易，并使用来制作化妆品。据说罗马皇帝尼禄在皇后波培娅·萨宾娜的丧礼上烧掉了足够供应罗马城一年份的乳香。乳香也是犹太教圣殿中所燃的香料之一，旧约全书前五卷中经常提到乳香。根据圣经《马太福音》第二章第11节记载，来自东方的贤士带了黄金、乳香和没药去伯利恒朝圣，将其奉献给降诞于人间的耶稣。现今天主教的重要弥撒中仍常用到乳香。&lt;/p&gt;
+&lt;p&gt;由于基督教的发展，令乳香在埃及和欧洲的市场在4世纪之后逐渐缩小，以及6世纪也门马里卜大坝崩溃之后阿拉伯半岛上出现荒漠化的现象，被称为“无人地带”的鲁卜哈利沙漠中的众多绿洲消失，使得商旅马车更难以越过。再加上近东的帕提亚帝国境内游牧民族对商旅的抢夺，使得也门经阿曼至近东的“乳香之路”在兴盛了300年后出现衰落的趋势。但此后仍通过红海向拜占廷、中国出口大量的乳香。公元11世纪，阿曼开辟了至中国广州、泉州的“海上丝绸之路”，又称之为“海上乳香之路”，每年向中国出口数十吨以至上百吨乳香。北宋初年，泉州陈洪进遣使于乾德元年（963年）十二月，“贡白金千两，乳香、茶药皆万计。”真宗朝，皇帝尊崇道教，对乳香的消费大增，“道场科醮无虚日，永昼达夕，宝香不绝……袭庆奉祀，日赐供乳香一百二十斤”。宋徽宗崇宁年间，“神霄宫事起，土木之工尤盛。群道士无赖，官吏无敢少忤其意，月须币帛、珠砂、纸笔、沉香、乳香之类，不可数计，随欲随给。”&lt;br&gt;
+失落的古城邬巴尔在现在的阿曼，位于“香料之路”上，被认为是以前乳香交易的中心。邬巴尔在1990年代初期被重新发现，现在正在作考古挖掘中。&lt;br&gt;
+用途：古代将乳香用于宗教祭典，也当作熏香料（制造熏香、精油的原料）使用。也是中药的一种外科和内科药材，用于止痛、化瘀、活血，乳香“性温，疗耳聋、中风、口噤、妇人血风。能发酒治风，冷止大肠，泄僻疗诸疮疖，令内消。”。赵汝适在《诸蕃志》卷下《乳香》载：“乳香，一名薫陆香，出大食之麻啰拔、施曷、奴发三国深山穷谷中。其树大概类榕，以斧斫株，脂溢于外，结而成香，聚而为块”。在西方的文献纪载中，乳香用做消炎、杀菌、镇定，促进细胞再生，现代也逐渐有人使用一滴乳香精油涂抹脸部，抗皱。可抗发炎、抗关节炎、抗霉菌和抗细菌。局部使用于疼痛的缓解上，可降低胆固醇、保护肝脏。对于关节炎、痛风、下背痛、肌炎以及纤维肌痛症有益。帮助修复因发炎所造成的血管伤害。在传统上可以使用来治疗肥胖、腹泻、肺部疾病、钱癣以及疖。&lt;br&gt;
+👉船纹铜提筒&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651416388805.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+提筒是古代越族的盛储器。墓中出土铜提筒共9件，这件最为精美。筒身有四组船纹，四船首尾相连，高高翘起。船中有弓形大橹，显然是能远航的海船。图案反应了一支船队凯旋杀俘的场景。&lt;br&gt;
+📕船纹线图&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463649741.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这些船前后相接，首尾高翘，船体明显绘出甲板，船内分隔成5舱或6舱，满载着战利品。每船上有5位羽人，头戴羽冠，上身赤裸，下身穿羽毛状短裙。第二位羽人都坐于一器物上，似在敲鼓或演奏某种乐器；第三位羽人都一手执短兵刃，一手抓持一俘虏；第五位羽人都在操持着一条大弧度狭长物体；第一和第四位羽人的动作则每艘船不同，或执弓箭或执钺。船的前后及下方还有海龟、海鱼、鸟等动物。&lt;br&gt;
+据推测，每艘船上第五位羽人操持的狭长工具应为当时的尾橹，这是目前关于橹的最早形象证据。&lt;br&gt;
+橹至迟在汉代已出现，它比桨更高效、便捷，故有“一橹抵三桨”之说。橹变桨的间歇划水为连续划水，大大加快了船的航行速度，还兼有操纵和控制船舶航向的作用，是船舶推进工具的重大革新。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463686759.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+橹的结构&lt;br&gt;
+综合分析，船纹展现的应该是战争凯旋之后欢庆的场景，也有人认为和祭祀水（海）神有关。船纹铜提筒的发现证明两千多年前，广州已拥有相当规模的造船能力与先进的技术水平，为今人了解秦汉时期岭南造船技术的发展提供了重要的图像参考。&lt;br&gt;
+👉绘画铜镜&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651462829996.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+共出土墓主人铜镜6枚，其中绘画铜镜4枚。此镜直径41厘米，是最大的一枚西汉绘画镜。&lt;br&gt;
+👉漆木屏风&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651494010118.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉人操蛇鎏金铜托座&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651494024010.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651494048732.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出土两件，为承托与连接屏障与翼障的构件，可折合。托座的铜人为典型越人形象，短裤跣足，口咬、手抓、脚夹长蛇，四蛇相互绞缠，下接覆斗形底座，与力士俑形成三点支撑。&lt;br&gt;
+📕鎏金铜托座    托座中，跪坐的力士用口衔蛇，双手操蛇的造型，力士低鼻大眼、着短裤与短袖葛衣、跣足，从服饰、体态看为典型的越人无疑，而食蛇也是古代越人传统。&lt;br&gt;
+👉蟠龙鎏金铜托座&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651494082607.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651495509619.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出土两件，为屏风左、右翼障的托座，用失蜡法铸成。有一龙二蛇三蛙组成，表现的是蛇缠蛙，龙踩蛇护蛙的场景。其中蛇、蛙是古越人的图腾，龙是中原人崇拜的四神之一。&lt;br&gt;
+📕蟠龙形托座。该托座由一条龙、两条蛇、三只青蛙组成，龙的四只足踩在一个由两条蛇组成的支座之上，支座为双蛇合体，蛇身各卷缠一只青蛙，龙的四肢微微下蹲，一只青蛙伏在龙口之中，前肢抓住龙口的边缘。“蛇、蛙曾是古越人图腾，龙是中原人崇拜的四神之一，蛇缠青蛙，龙踩住蛇保护青蛙，似乎在讲述某个传说中的图腾神话故事，反映了多民族观念习俗走向一体化的过程”。&lt;br&gt;
+👉蛇纹鎏金铜托座&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651494093845.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出土两件。有3个扁长方形套筒连成“之”字形主体，托座由3条蛇组成，用以承托屏风的壁板和中门。&lt;br&gt;
+📕该托座正面1蛇背面2蛇互相绞缠，在右上角和左上角各有一组卷云纹带饰系于蛇身，又在绞缠的蛇体正中两面各连接着一个斜撑着地，与另一端下方的“亜”字形小础形成三点支撑。蛇是古代越人崇拜的图腾，卷云纹则颇有楚风，这是一件非常有地方特色的器物。&lt;br&gt;
+📕📕📕📕📕📕📕📕📕&lt;br&gt;
+屏风约出现于西周时期，在古代中国人的日常家居中使用十分普遍。从流传下来的古画图像和文字记录中可知，凡厅堂居室，只要有条件，多会设置屏风，由此还衍生出地屏风、榻上屏风、梳妆屏风、灯屏风等五花八门的式样，可区隔房室，可置于案头，各有功用。在广州象岗山南越王赵眜墓中，就曾出土有所见最早的西汉实用屏风，规模之宽博壮阔，装饰之精彩华美，堪称国宝级别。这件宝物，是汉、楚、越文化融合一体的典型实证，也是当时的中国文化多元而政治统一的历史见证。&lt;br&gt;
+📕朱雀蟠龙舞 金蛇力士缠&lt;br&gt;
+这座双面屏风左右对称，高1.80米、正面宽3米，等分3间，每间宽1米，左右的次间为固定屏壁，正中的明间为屏门，可以向后推开。两侧各有一页翼障，可作90度展开，成为一幅宽1米的翼障。屏风顶上两转角处各立1只铜铸的朱雀，两翼障上和屏门顶上各立双面铜兽首，翼障之下是托座。铜构件顶上都连着管状插座，铜朱雀的尾巴处还留有雉尾的羽根数条，附近的器物上也有雉羽残留，估计这些构件上原来都插有鸟羽作为装饰。屏门的顶部和翼障下面，都有鎏金的铜铸雕饰。两次间分别由人操蛇鎏金铜托座、蛇纹铜托座对称承托。&lt;/p&gt;
+&lt;p&gt;屏风位置还采集到十来片厚约0.2厘米、长短宽窄不一的象牙片，在同出的屏风边框木条中，凹槽内贴着一片象牙片，由此得知屏风的壁板插入边框凹槽内，若有空隙，容易松动，就用这些象牙薄片填塞紧固。&lt;br&gt;
+屏风饰有数百枚鎏金铜泡钉，这给考古学者们设置了难题：每颗泡钉间距平均以9厘米计，正背两面的12个边框共饰泡钉608枚，但屏风上装饰的鎏金泡钉除去朽坏的，仍有658枚，多出的这50枚应该装在哪里呢？到目前都还没有答案。&lt;br&gt;
+📕红黑卷云纹 瑰丽世界观&lt;br&gt;
+楚地的漆器水平极高，“他说第二，谁敢说第一。”南越王墓中出土的漆器数量并不少，不过被发现时保存状况相对不太好，残损较多，许多装饰、材料等方面的细节也就永远遗失了。&lt;/p&gt;
+&lt;p&gt;出土时屏风位置上朽余的残漆皮中，有少许在黑漆地上用红白二色描绘了卷云纹，可惜都已经碎如指甲大小。考古专家们认为，屏风两面共12面竖幅都可施彩画，画的是什么？无法知晓。今天陈列于西汉南越王博物馆中的复原品，是在黑地上满屏通绘了红色的卷云纹，堂皇大气，颇具王家风范。&lt;/p&gt;
+&lt;p&gt;专家们在《西汉南越王墓多元文化研究》一书中指出，这种“红黑两色的卷云纹图案，具有鲜明的楚文化特点”。卷云纹图案在南越王墓中出土的漆器或相关配件上较为常见，如东耳室出土的原来应该装饰在大博局、漆案等之上的金、银片，就多呈卷云纹形状；室中出土的两三件疑为漆盒的漆器，黑漆皮上隐隐现出彩绘卷云纹；西耳室发现的漆木箱、漆盒、漆盆上，也都有云纹、卷云纹；东侧室发现的镶铜框漆案，漆木上钉满卷云纹银饰片；西侧室的马蹄形漆盒盒盖侧面，也可看出漆地朱绘卷云纹。&lt;/p&gt;
+&lt;p&gt;这种“楚风”图案，也出现在墓室的壁画上。前室四周的墙壁、室顶以及南北两道石门和门楹上均发现有彩绘痕迹。朱红色和墨色彩绘的卷云纹图案遍布其上，笔触行云流水。&lt;/p&gt;
+&lt;p&gt;《说文》曰：“云，山川之气也。”云纹是楚、汉漆绘中最常见的纹饰之一。汉受楚文化影响极大，漆绘云纹更加盛行。有学者认为这是因为汉人笃信人有灵魂，人间之外还有天上的世界。还有学者认为云纹与叶片状纹样、龙形图案等相关。这种神秘浪漫色彩、灵动虚幻的艺术形象充满着生命律动，让人不禁联想起屈原、宋玉诗歌里瑰丽的世界。&lt;br&gt;
+📕楚人入“楚庭” 楚风渐南越&lt;br&gt;
+南越王赵眜墓中出土的众多文物表明，在大约楚亡100年，秦亡84年后，楚文化对南越的影响仍然存在。春秋楚庄王时势力强大而成为霸主，彼时楚国疆域西到今陕西境内，北到河南南阳，东达钱塘江以北，南及岭南，涵盖的古民族组成和文化类型也非常丰富。&lt;/p&gt;
+&lt;p&gt;南越国虽由秦军将领开国，但楚人经营南越地远较秦人久远， 若从楚共王“奄征南海”算起，至赵佗自王，已有350年左右；若从吴起相楚悼王“南平百越”算起，也有160余年之久。传说中广州最早的古称为“楚庭”，即表明了古人对楚越文化交流的认知。粤语的有些词可能就源自古楚语。楚地人群入南越，有学者推测首先是越过五岭越城、都庞、萌渚一带的低谷山口，经湘江、潇水、漓江、富江、贺江等水道，及今灵渠等当时的旱路构成的交通网，进入西江流域，此水路后经秦开拓、汉经营，早于梅岭古道而成为沟通五岭南北的发达水路，“两广”的称呼即起源于此；此外，还有一条主要线路是以连州为枢纽，主要经郴州经宜章、临武境入连州，也包括了很多岔路。&lt;/p&gt;
+&lt;p&gt;楚文化对南越的影响，一方面经由迁徙岭南的古越人族群间接传入，一方面应也存在着两地之间的直接交流。物质层面的影响可由岭南出土的南越国时期文物得见一斑，精神层面的影响则更为深远。楚文化甚至通过两广地区继续向南传播，中南半岛发现的一些战国时期青铜器，即带有楚器特征。&lt;br&gt;
+失蜡法浇注托座之美&lt;br&gt;
+　人操蛇鎏金铜托座构件中，力士和蛇的形体均为自然的浑圆体，没有范缝痕迹。蛇与蛇、蛇与人缠绕处，均有蜡模的接痕和修痕，在河南省文物研究所李京华看来，这证明其为失蜡法铸造。分别做出力士俑和各条蛇的蜡模，再将其组合成为一体，经过造型、失蜡和焙烧，再将铜液浇注入内，即得到力士操蛇青铜托座。朱雀铜顶饰通体光滑无范痕，亦是精致的失蜡铸件。&lt;/p&gt;
+&lt;p&gt;学者指出，失蜡法是我国三大传统铸造技术之一，特别适用于铸造形状复杂、分型困难的铸件，“它是古代中国在产品日趋复杂而陶范法无法满足的情况下出现的新型传统铸造法”。这种方法在近现代仍有使用。&lt;/p&gt;
+&lt;p&gt;楚文化是一种“坚韧、乐观、开拓、创新、求变”的文化。&lt;br&gt;
+双面兽首铜顶饰&lt;br&gt;
+装饰于屏风上部横坊上。头顶出双角，额顶正中伸出一根圆管形插座，两肩和双耳向外伸展成相互绞缠的卷云纹样，终端各伸出一根圆管形插座，用以插羽毛。整件器物通体鎏金。&lt;/p&gt;
+&lt;p&gt;📕朱雀铜顶饰&lt;/p&gt;
+&lt;p&gt;在汉代，朱雀被视为主管南方之神，以朱雀为顶饰也反映了这一时期汉文化对岭南的影响。&lt;/p&gt;
+&lt;p&gt;📕蟠龙形托座&lt;/p&gt;
+&lt;p&gt;该托座由一条龙、两条蛇、三只青蛙组成，龙的四只足踩在一个由两条蛇组成的支座之上，支座为双蛇合体，蛇身各卷缠一只青蛙，龙的四肢微微下蹲，一只青蛙伏在龙口之中，前肢抓住龙口的边缘。“蛇、蛙曾是古越人图腾，龙是中原人崇拜的四神之一，蛇缠青蛙，龙踩住蛇保护青蛙，似乎在讲述某个传说中的图腾神话故事，反映了多民族观念习俗走向一体化的过程”。&lt;/p&gt;
+&lt;p&gt;📕蛇纹托座&lt;/p&gt;
+&lt;p&gt;该托座正面1蛇背面2蛇互相绞缠，在右上角和左上角各有一组卷云纹带饰系于蛇身，又在绞缠的蛇体正中两面各连接着一个斜撑着地，与另一端下方的“亜”字形小础形成三点支撑。蛇是古代越人崇拜的图腾，卷云纹则颇有楚风，这是一件非常有地方特色的器物。&lt;br&gt;
+人操蛇鎏金铜托座&lt;/p&gt;
+&lt;p&gt;托座中，跪坐的力士用口衔蛇，双手操蛇的造型，力士低鼻大眼、着短裤与短袖葛衣、跣足，从服饰、体态看为典型的越人无疑，而食蛇也是古代越人传统。&lt;br&gt;
+👉骨雕天鹅&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651462945578.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+出土于包裹绘画铜镜的绢物残渣中，是器物上的装饰物。&lt;br&gt;
+📕📕📕📕📕📕📕📕📕&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463090211.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463103536.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉四连体铜熏炉&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463195394.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651463204076.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+熏炉盒盖为田字形，揭开后盒内分为4分互不连通的小盒。可以同时放置多种香料。&lt;br&gt;
+在古代，中国从海外进口的货物以香料为大宗，因此海上丝绸之路也有“香料之路”的美誉。香料可用于熏燃、药用、食用等，来源主要为印度、东南亚、中东等地区。&lt;br&gt;
+早在汉代时，熏炉焚香已蔚然成风，当时使用的乳香、沉香、檀香等热带香料多来源于海外地区。汉墓中熏炉的大量出土，佐证了当时熏香风气的流行与香料贸易的繁盛。&lt;br&gt;
+👉五色药石&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493200968.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+俗称“五石散”，古代帝王信其可延年益寿，长生不老。墓中出土的雄黄、硫磺、赭石、紫水晶、绿松石等五色药石，为汉墓中首见。这些药石均有清热解毒的功效，但长期或大量服用，则会中毒。&lt;br&gt;
+📕📕📕📕📕📕📕📕📕&lt;br&gt;
+除了首次发现五色药石，南越王墓里还发现了一些可疑的铅丸和丹砂。在西耳室的药杵旁，发现了两堆528个小铅丸。铅丸直径1.8厘米，单个重31.5克。值得注意的是，这批药丸制作相当精细，大部分中间有一个小圆孔，不穿透。它们跟主棺室内与弩机一起出土的用作武器的12枚铅弹丸很不同：弹丸直径2.9厘米，重124～129克，有纵穿小孔，表面粗糙，氧化得很厉害，呈灰白色，多数开裂。&lt;/p&gt;
+&lt;p&gt;当年的考古人员和专家学者都很疑惑：这批小铅丸具体是作什么用途的？经过考古考证，古代炼丹士炼制出丹砂（硫化汞）和铅用于内服，能产生显著的镇静安神、镇逆定喘功效，使人自觉神清气爽飘飘然，有的服用这种“金丹”的人死了，竟被视为“仙去”。南越国“死对头”长沙国，马王堆1号墓女主人女尸化验发现，体内含汞、铅量超过正常几十至数百倍。&lt;/p&gt;
+&lt;p&gt;王芳与一批学者大胆推测，西耳室内小铅丸可能是南越王让人精心炼制的矿物丹药，其中还有一个物证是，在主棺室棺椁头端还发现了一颗与528枚小铅丸完全一致的小铅丸！因为丹药不是药性酷烈，就是大热大毒，所以吞服后产生一时兴奋，日久就会毒发。史载南越王虽然权倾岭南，但是体弱多病，40多岁就去世了。而其墓室内有大量五色药石和铅丸，赵目末很可能就是服食丹药剂中毒的受害者。但是，因为墓主人尸骨所剩无多，具体情况只能进一步检验文物药丸后才能确定。&lt;/p&gt;
+&lt;p&gt;南越王养龟嗜酒求长寿&lt;/p&gt;
+&lt;p&gt;据考古发现，南越王赵目末为了延年益寿，还养龟和嗜酒。中国食、养龟和以酒抗衰老，颐养天年的“古法”在南越国遗迹的出土文物中再次得到验证。&lt;/p&gt;
+&lt;p&gt;在南越王墓后藏室，摆满了食物和炊具，铜提桶和一个异形壶里都有花龟和水鱼的遗迹。而王宫遗迹后花园的石池底淤泥层里，竟发现了数百只龟、鳖遗骸，叠压成层，厚达50厘米。其中有一个大鳖的背甲宽达44厘米，这么大的鳖，古人称之为“山瑞”。&lt;/p&gt;
+&lt;p&gt;嗜酒是南越王赵目末的另一大爱好。墓中出土的盛酒器具不下十几种，几十件之多。古书记载，古人认为“酒是百药之长”，酒的古文是酉，酉字从 ，说明酒与医药在古人生活里有特殊的关系。大量酒器的出土，说明南越国宫廷酒风之盛。尤其是出土自墓主棺椁头箱用来盛的角形酒杯，用一整块青玉雕琢成犀牛角造型，相传犀牛角可以解毒物，玉造的虽不能解毒，但玉匠就借题发挥，匠心独运、细致打磨，2000多年后的今天，玉角杯仍放射出温和恬润的光泽。&lt;br&gt;
+👉圆饼形墨丸和石砚&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493750931.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493765335.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493776208.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493782963.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1651493797634.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">南越王博物馆</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/guang-dong-sheng-bo-wu-guan-2022-nian-3-yue-25-ri/"" data-c="
+          &lt;p&gt;&lt;img src=&#34;http://localhost:4000/post-images/1650345385506.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650345355307.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;二零二二年三月二十四日晚——抵达广州白云国际机场&lt;br&gt;
+————————以铂尔曼大酒店为基地&lt;br&gt;
+于2022年3月25日；3月30日；3月31日三刷广东省博物馆：&lt;br&gt;
+🌈广东历史文化陈列&lt;br&gt;
+🌈丝路光华—粤陇文物精品联展&lt;br&gt;
+🌈酒歌—中国酒文化临展&lt;/p&gt;
+&lt;p&gt;📕广东省：简称粤。广东一名起源于汉朝交州刺史部治所广信县，取“初开粤地，宜广布恩信”之意，后将广信县（今为封开县，地处在两广交界处，毗邻广西梧州。）以东区域为广东，以西区域为广西。宋至道三年（997年）设广南东路，为今日广东省名之出处。&lt;br&gt;
+广东省北依南岭，南临南海，全境地势北高南低，从粤北山地逐步向南部沿海递降，形成北部山地、中部丘陵、南部以平原台地为主的地貌格局。广东地质构造运动和岩浆活动频繁，地壳运动和外动力作用的影响，塑造并形成了典型的地质地貌和重要地质遗迹100多处，其中最具代表性的有丹霞、岩溶、海蚀遗迹、火山、花岗岩奇峰等地质地貌景观。&lt;br&gt;
+📕广州市：简称广或穗，别称羊城、花城。“五羊城”、“羊城”、“穗城”此等广州的别名来自于五羊传说。相传有五位仙人穿着五色衣裳骑着五色羊，手执“一茎六出”的谷穗来到广州城，将谷穗交给城中人后，飞升而去，而五羊则化为石。故广州也简称为“穗”。广州适宜种植花卉，进而衍生出广州花市，广州也享有花城的别称。&lt;br&gt;
+📕广州是一座拥有2000多年历史的城市。&lt;br&gt;
+约公元前887年周朝，这里的“百越”人和长江中游的楚国人已有来往，建有“楚庭”，这是广州最早的名称。&lt;br&gt;
+公元前214年，秦攻占岭南，选址白云山和珠江之间南越人聚居的高地（番山）修筑番禺（史称任嚣城）。因这是广州建城年份的最早记载。&lt;br&gt;
+公元226年，孙权为便于统治，将交州分为交州和广州两部分，“广州”由此得名。&lt;br&gt;
+直到1921年成立市政厅，特指广州这座城市。&lt;/p&gt;
+&lt;p&gt;🌈广东历史文化陈列&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650351715184.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+岭南：古亦称岭表，岭外。主要包括今南岭山脉以南的广东，广西东部，海南，香港和澳门等地区。&lt;br&gt;
+十二万八千年前，广东北部出现了早期人类——马坝人。后续岭南文化与中原文化不断碰撞交融，逐渐形成了汉族的广府，客家，潮汕三大主要民系。&lt;br&gt;
+👉人类颅骨化石&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650351443032.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+新石器时代早期。古越族先民有拔牙的习俗。颅骨中一个个缺失的牙齿就是这一习俗的反映。&lt;br&gt;
+在旧时文献中，这种风俗习惯被称作“凿齿”、“打牙”。这是一种有意识地采用人工方法，拔除（或打、或敲）某些健康前位齿的行为，在《山海经》、《淮南子》中都有记载。古越族的后代——近现代的台湾高山族还或多或少地保留有拔牙的习俗。在广东珠江三角洲、环珠江口的贝丘、沙丘遗址，目前已经发现数十例与拔牙相关的考古遗迹。这些拔牙遗迹的人类体质特征相同，所拔牙齿位基本相同。它们的年代均在距今4000年以内的先秦时期。此外，越人中还有一种漆牙的习俗，称为“黑齿”。&lt;br&gt;
+对于“凿齿”的习俗，一是认为是青春期、成丁礼或结婚所需的一种仪式；&lt;br&gt;
+二是认为其表示一种美的观念，具有装饰意义；&lt;br&gt;
+三是认为这是为了表示崇信的一种行为或纪念性的行为。&lt;br&gt;
+👉韶关曲江石峡遗址 玉琮&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650356199765.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+琮是古代用于祭祀的玉质筒状物，最早的玉琮见于安徽潜山薛家岗第三期文化，距今约5100年。尤以良渚文化的玉琮最发达，出土与传世的数量最多。&lt;br&gt;
+在玉器中，琮是用于祭地的玉器，古人认为“天圆地方”，故以圆璧祭天，以方琮祭地，玉琮成为统治阶级祭祀苍茫大地的礼器，也是巫师通神的法器。&lt;br&gt;
+《周礼·春官·大宗伯》记载“以玉作六器，以礼天地四方：以苍璧礼天，以黄琮礼地，以青圭礼东方，以赤璋礼南方，以白琥礼西方，以玄璜礼北方”。它与玉璧、玉圭、玉璋、玉璜、玉琥被称为“六器”。为我国古代重要礼器之一。&lt;br&gt;
+琮的外型状似笔筒，外型方内洞圆，至乾隆皇帝时期出土时都还无人晓得用途，乾隆自行考证认为是古人搬运重物用的配重品，还自行取名“杠头”并加装铜内胆作为笔筒，烧香和宫廷插花花瓶，直到乾隆去世90多年后才考证出是礼器琮。&lt;br&gt;
+👉秦 “番禺”漆盒&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650356509680.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+番禺是目前考古实物中所见广州最早的名称。也是岭南开始实施郡县制的见证！&lt;br&gt;
+👉西汉 铜印染工具（复制品）&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650356709384.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这套印花凸版是目前世界上年代最早的织物印花工具&lt;br&gt;
+👉唐代广州首设市舶使和市舶使院，标志着中国海上对外贸易管理体制的开始。宋代市舶使院改称市舶司。&lt;br&gt;
+市舶制度：市舶指进行海外贸易的船只。市舶司是一种专门管理海上对外贸易的机构，其职责包括“掌蕃货，海舶，徵（zhi）榷，贸易之事，以徕远人，通远物”&lt;br&gt;
+👉清 粤海关一百两砝码&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650374263188.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+清代设立粤海关，标志着一千多年市舶制度的终结和近代海关制度的创始：&lt;br&gt;
+1685年，康熙皇帝废除晚明以来的禁海令，实行开海贸易政策，在东南沿海设立粤（广州）、闽（福州）、江（上海）、浙（宁波）四大海关，作为管理海上对外贸易的行政机构。&lt;br&gt;
+1757年，由于外商频年不断的掠夺和违法行为，乾隆只准许粤海关独家管理海上对外贸易事务。粤海关的巨额税收成为皇家内务府的重要财源。&lt;br&gt;
+这件重达100两的砝码，说明粤海关征收海外商船进出口税不在少数。&lt;br&gt;
+鸦片战争前，粤海常关税收在全国常关中位居第一，年均90多万银两，到乾嘉之际突破百万大关。鸦片战争后，常关衰落，关税剧减。咸丰四年至光绪二十六年的税收，粤海常关的税银仅为一口通常时期（乾隆22年-道光20年）的25%左右，而到光绪二十七年，五十里内常关归并粤海新关管理时，粤海常关税收则降至21%&lt;br&gt;
+👉唐代 五十两银锭&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650371510177.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650371525958.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+银锭指铸成锭状的银两（“锭”亦通“铤”，量词，本指未经冶炼铸造的金属块）。元朝以“元”为国号，库银逐称为元宝（取其元朝之宝之意。元初的“中统元宝”也有发行交钞及钱币），此后“元宝”一词也泛指银锭以至一切金银货币。&lt;br&gt;
+“银锭”重量有一、二、三、五、十、五十两之别，而“元宝”一词也可以专指重五十两的银锭。&lt;br&gt;
+此物与1956年12月31日西安市地方国营第一砖瓦厂出土、现藏国博,正面中部一行铭文为“岭南采访使兼南海郡太守臣彭杲进”,右上角有“银五十两”四字,背面无字。二者皆有相似之处！&lt;br&gt;
+彭杲银铤&lt;br&gt;
+第一,银铤上刻铭确为“彭杲”,“彭杲”与“彭果”应是指同一人,“彭杲”为正确写法,彭果之“果”为“杲”的误写；&lt;br&gt;
+第二,关于彭杲银铤进奉的时间,铤上未刻,但从《资治通鉴·唐纪三一》所载,可以基本确定彭杲担任岭南五府经略兼南海郡太守的时间,应在天宝四载五月至天宝五载秋之间,彭杲进奉银铤亦在此期间,即公元745——746年；&lt;br&gt;
+第三,对彭杲生平事迹略做梳理,知其历任御史中丞、光禄少卿、岭南五府经略、采访使兼南海郡太守,仕途一生,却毁于坐赃巨万。&lt;br&gt;
+今天,当我们凝视着这件虽生出黑锈但仍闪着光亮的银铤,细细品味铤上錾刻的铭文,遥想一千多年前一位官吏的宦海浮沉,厚重的银铤饱含着丰富而又深刻的内涵,带给人更多的是对历史的反思&lt;br&gt;
+👉清末 新加坡 猪仔钱&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650375112544.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+猪仔钱是种槙园主、矿场主支付给契约华工工薪的代用币，具能在雇主的种植园或矿山企业中流通,以此加强对华工的控制和束缚。&lt;br&gt;
+1860年，清政府被迫与西方列强签订《北京条约》，其中规定清政府准许外国公司在中国招募华工出国。此后，华南沿海地区居民通过契约、赊单、自由华工等途径和身份下南洋、闯美洲讨生活，也有相当多的沿海居民被拐骗、掳掠至海外从事艰苦体力劳动。部分南洋华工终年劳动，所得仅能消费在烟、赌、酒、色上，无法改善自己的处境，更无法赡养国内的亲属，往往最终身无分文，客死他乡。“猪仔钱”是海外华工辛酸血泪史的重要物证。&lt;br&gt;
+华工出国后，许多种植园主、矿场主在支付华工工钱时部分或全部以票券或代用币来支付，这些代用币就是俗称的“猪仔钱”。“猪仔钱”只能在种植园主、矿场主开设的商店、鸦片馆、赌馆和妓院等场所使用，不能在市面流通，从而加强了对华工的人身控制和经济剥削。“猪仔钱”多为陶瓷所制，目前存世量不大。“猪仔钱”上通常印有不同种植园、矿场等的标志字号，形状多样，工艺上则有青花、青花釉里红、粉彩等品种。主要产自广东、福建，潮州窑、德化窑是主要出产地。&lt;br&gt;
+👉民国 口供薄&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650375340335.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650375355605.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+口供簿也称“口供纸”，美国排华时期的特殊产物。当年华人为应对苛刻的入境审查程序而编写的应答移民官盘问的资料。因华人多为劳工背景，能利用这种“口供纸”方式顺利入境的，主要是商贾身份华人。&lt;/p&gt;
+&lt;p&gt;🌈丝路光华—粤陇文物精品联展&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650378972346.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+位于中国西北的甘肃，连接中原和亚洲内陆，成为“陆上丝绸之路”必经的交通要道；位于华南地区的广东，面向广阔的南太平洋，拥有“海上丝绸之路”重要的贸易港口。两地都在“丝绸之路”的建设和东西方贸易往来中扮演着重要角色。它们相隔千里，又息息相关。&lt;br&gt;
+👉蜻蜓眼玻璃珠&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650379059148.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+左侧：甘肃省博物馆 战国（公元前476年—公元前221年）&lt;br&gt;
+蜻蜓眼玻璃珠最早制作于公元前16世纪埃及地区。玻璃珠纹饰象征神人眼睛，多作护身符之用。蜻蜓眼玻璃珠经欧亚草原向东传播，通过游牧民族迁徙时随身携带或贸易等方式传入中国内地。在本土文化的影响下，其护身符的功能被消减，更多的成为彰显身份地位的珍宝。目前我国境内发现最早的蜻蜓眼玻璃珠出现在新疆轮台、拜城地区，时间在西周晚期，中原地区最早于两周之际出现在山西一带，均属钠钙玻璃，且艺术风格与同时期西亚地区的蜻蜓眼珠极为相似，应为西方舶来品。&lt;br&gt;
+右侧：广东省博物馆 西汉早期（约公元前1世纪）&lt;br&gt;
+广东省博物馆藏的此件西汉早期蜻蜓眼玻璃珠，经成分检测为铅钡玻璃，为中国原产，见证了西方工艺中国化以及在国内从北向南传播的过程。岭南地区发现的汉代蜻蜓眼玻璃珠，颜色主要是蓝色、不透明、圆形，珠表面嵌饰黄、白、蓝相间的圆圈眼纹，形似蜻蜓的复眼。&lt;br&gt;
+🌏战国时期，楚地工匠在西方蜻蜓眼珠的基础上模仿创新出铅钡或钾基蜻蜓眼玻璃珠，广泛分布于中国南北14省。此件蜻蜓眼玻璃珠，经成分检测为铅钡玻璃，可能为楚地传入，见证了西方工艺中国化以及在国内从北向南传播的过程。秦以后，蜻蜓眼玻璃珠在中国逐渐式微，仅在云南、广东等地少量发现。&lt;br&gt;
+“蜻蜓眼”是指在单色玻璃珠上嵌入一种或几种颜色相同或不同的玻璃，在表面形成多层圆环状纹饰或圆环状凸起。因这种玻璃珠像蜻蜓的复眼，在西方被称为“复合眼珠”，在中国则被称为“蜻蜓眼”。 “眼睛文化”据说发源于西亚或印度，相信眼睛有避邪功能的这种信仰，多盛行于从事畜牧的草原民族，在遊牧民族迁徙的路途中，身上佩戴这种镶嵌玻璃珠，一方面可以避邪，一方面随时都有可能用來交换所需之物。&lt;br&gt;
+☁️这件展品摆在丝路光华一进门的显眼位置。一陇一粤，一陆一海。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650426796916.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+陆上丝绸之路：丝绸之路是德国地貌学地质学家李希霍芬1877年提出，原指中西陆上通道，因为主要贸易是丝绸，故名。此名出现后，学术界又延伸出海上丝绸之路。最早提出海上丝绸之路的是法国汉学家沙畹。&lt;br&gt;
+海上丝绸之路：是古代中国与外国交通贸易和文化交往的海上通道，也称&amp;quot;海上陶瓷之路&amp;quot;和“海上香料之路”，1913年由法国的东方学家沙畹首次提及。海上丝路萌芽于商周，发展于春秋战国，形成于秦汉，兴于唐宋，转变于明清，是已知最为古老的海上航线。中国海上丝路分为东海航线和南海航线两条线路，其中主要以南海为中心。&lt;br&gt;
+南海航线，又称南海丝绸之路，起点主要是广州和泉州。先秦时期，岭南先民在南海乃至南太平洋沿岸及其岛屿开辟了以陶瓷为纽带的交易圈   。唐代的“广州通海夷道”，是中国海上丝绸之路的最早叫法，是当时世界上最长的远洋航线。明朝时郑和下西洋更标志着海上丝路发展到了极盛时期。南海丝路从中国经中南半岛和南海诸国，穿过印度洋，进入红海，抵达东非和欧洲，途经100多个国家和地区，成为中国与外国贸易往来和文化交流的海上大通道，并推动了沿线各国的共同发展。&lt;br&gt;
+据《新唐书·地理志》记载，广州通海夷道以广州为起点，全长1.4万公里，当时通过这条通道往外输出的商品主要有丝绸、瓷器、茶叶和铜铁器四大宗；往回输入的主要是香料、花草等一些供宫廷赏玩的奇珍异宝。&lt;br&gt;
+海上丝绸之路开辟后，在隋唐以前，即公元6～7世纪，它只是陆上丝绸之路的一种补充形式。但到隋唐时期，由于西域战火不断，陆上丝绸之路被战争所阻断。代之而兴的便是海上丝绸之路。到唐代，伴随着我国造船、航海技术的发展，我国通往东南亚、马六甲海峡、印度洋、红海，及至非洲大陆的航路的纷纷开通与延伸，海上丝绸之路终于替代了陆上丝绸之路，成为我国对外交往的主要通道 。&lt;br&gt;
+海上丝绸之路发展过程，大致可分为六个历史阶段：&lt;br&gt;
+海上丝绸之路开创期——先秦&lt;br&gt;
+海上丝绸之路形成期——秦汉&lt;br&gt;
+海上丝绸之路发展期——魏晋&lt;br&gt;
+海上丝绸之路繁盛期——隋唐&lt;br&gt;
+海上丝绸之路鼎盛时期——宋元&lt;br&gt;
+海上丝绸之路由盛及衰——明清&lt;br&gt;
+史前时代，中国西北的河陇大地和南方的岭南地区，与周边文化便存在交流。河陇属于典型大陆性文化，处于黄河农业文化与北方游牧文化的结合部：岭南具有鲜明的海洋性特征，位于东亚大陆与东南亚地区之间的交接处。两地相距甚远，却均为不同文明板块之间的枢纽。汉武帝动用国家力量连通西域、直达南海，正式连接出沟通东西方的丝绸之路，推动了中国与各国的交流融合。两汉时期，丝绸之路上中国输出的商品主要是丝绸，输入的则有各国的奇珍异宝、香料珠饰。&lt;br&gt;
+🌏约公元前3000年末，河西走廊与欧亚草原之间存在着文化互动，西方治金技术由西伯利亚传至新疆，后抵达河西走廊，并实现本土化。同时，马家窑文化也逐渐东传到河西走廊西部，产生了独具特色的齐家文化、四坝文化、沙井文化。公元前2000纪上半叶，河西走廊的黑水河流域已经成为一个重要的冶金生产中心，中国西北地区早期冶金的兴起和发展与欧亚草原早期青铜文化的传入密切相关。&lt;br&gt;
+🌏齐家文化出士不少来自中原地区用于宗教礼仪的玉器，又继承、吸收经河西走廊和北方草原传入的西方冶铜技术，改造吸收后发展出具有当地特色的冶金工艺，铸造逐渐成为主流。由此说明中国玉石文化与西来的青铜文化在河陇地区的交汇融合。&lt;br&gt;
+👉铜镯 公元前2300年—前1600年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650427043683.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+新石器时代晚期，齐家文化继马家窑文化和常山下层文化发展而来，己进入铜石并用阶段，为后来青铜文化的发展奠定基础。经考古发现，齐家文化主要分布于甘肃洮河、渭河上游、河西走廊疏勒河流域及青海湟水流域。&lt;br&gt;
+👉铜空首斧 公元前1900年—前1400年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650427779944.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉塞依玛—图尔宾诺式倒钩铜矛 公元前2300年—前1600年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650427972443.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650428443324.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+塞依玛—图尔宾诺文化是欧亚草原一支十分重要的青铜时代考古学文化，兴起于阿尔泰山，随后沿欧亚大陆的主要河流广泛传播，中国新疆、甘肃、青海、山西、河南等地均发现了倒钩铜矛、空首斧、环首弧背铜刀等与塞伊玛一图尔宾诺文化相近的遗物。&lt;br&gt;
+中国境内的倒钩铜矛与典型塞伊玛一图尔宾诺倒钩铜矛在形制上有着明显区别，矛头变得圆钝，矛叶变得宽大，武器功能削弱礼器功能显著，可见这并非是直接的舶来品，而是在文化传播与交流中有所扬弃。中国西北地区对来自欧亚草原冶金术并非全盘被动地接受，而是主动加以改造和利用，并不断形成自身的特色。&lt;br&gt;
+🌏广泛分布在我国境内的空首斧与倒钩铜矛，是欧亚草原塞依玛—图尔宾诺文化的典型器物，见证了史前时期中国西北地区与欧亚草原之问的文化交流。&lt;br&gt;
+👉铜鼎形灯 战国 公元前475年—前221年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650428596660.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+器物为三足圆鼎，内盛燃灯时所用的油料；鼎盖两侧各有一鸭首，其宽嘴正好衔住双键，将鼎盖牢牢扣住。当该铜鼎需要用作灯时，鼎盖翻转成为灯盏，双键支起插入盖中心的圆銎（qiong斧子上安柄的孔）中。&lt;br&gt;
+👉翼兽青铜提梁盉 春秋 公元前770年—前476年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650429601828.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650429618347.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650429667220.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+该青铜盉巧妙地设计成一只具有双翼的四足兽，以龙为提梁，以凤为盖钮。据研究，翼兽形象早期流行于中亚、西亚地区及亚欧草原，传播到中国约为战国时期。&lt;br&gt;
+🌏这件提梁盉出土于泾川，即周代秦人的主要所在地。周、秦的先祖在泾水上游和西汉水上游兴邦立业，开疆拓土，使中原文化不断向西推进。战国时期，秦长城西达临洮，秦与河西走廊的交通已经通畅。甘肃出土的周秦时期的青铜器成为多元文化交流的见证。&lt;br&gt;
+提梁盉被巧妙地设计成一只有双翼的四足兽，以翼兽为器身，以龙柄为提梁，以凤为盖钮，龙、凤、翼兽三种神兽巧妙地融为一体。器腹两侧各浮雕一飞龙，龙体编饰鳞状，并各有五条扬起的羽翼，两只飞龙恰好构成兽的双翼。据研究，翼兽形象是西亚神话怪兽“格里芬”向东传播的变体，早期流行于中亚、西亚地区及亚欧草原，大约在春秋战国时期传播到中国，因此这件展品是中西青铜文化交流与融合的见证。&lt;br&gt;
+👉蜻蜓眼玻璃珠 战国 公元前475年——前221年&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650430679167.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650430805331.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+蜻蜓眼玻璃珠最早制作于公元前16世纪埃及地区。玻璃珠纹饰象征神人眼睛，多作护身符之用。蜻蜓眼玻璃珠经欧亚草原向东传入中国，约公元前500年传入黄河中下游和长江流域。经研究，国内出土发现的最早一批蜻蜓眼玻璃珠为西方舶来品，属于钠钙玻璃。当蜻蜓眼玻璃珠传到楚国时，楚人开始仿制，成分以铅钡或钾钙为主。&lt;br&gt;
+👉双肩石锛&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650431784064.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+岭南地区以珠江三角洲为中心的史前文化，对东南亚和太平洋诸岛屿产生了深远的影响。作为岭南新石器时代典型特征之一的有肩石器，于珠江三角洲发源后循中国南部海岸西行，经广西而入云南及至中南半岛、马来半岛、南亚等地区。它与分布在南太平洋到印度洋上的南岛语族使用的石器极其近似。&lt;br&gt;
+👉石峡文化 玉琮&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650435830991.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+石峡遗址位于广东省韶关市曲江区马坝镇西南3公里处的狮子岩，是新石器时代遗址。狮子岩是两座相邻的石灰岩山峰，远看像伏地的狮子，北山为狮头，南山为狮尾。1958年马坝公社的农民在狮子岩狮头山北面第二层溶洞中采挖洞内的堆积作肥料时，在的一条裂隙发现古人类头骨化石和古脊椎动物化石，经有关专家鉴定是直立人向智人过渡的早期类型人类化石，于是命名为马坝人。1973年，在狮子岩狮头山与狮尾山之间又发现了为新石器时代遗址，称为石峡遗址。石峡遗址有4个文化堆积层：第一层是距今约6000年的新石器时代文化层；第二层是距今约5000—4000年的新石器晚期文化层（被命名为“石峡文化”）；第三层是距今约3800—3100年的早期青铜文化层；第四层是西周晚期到春秋时期相当的晚期青铜文化层。&lt;br&gt;
+👉“驿使图”壁画砖 魏晋 公园220年—420年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650436129803.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+该壁画砖出士于嘉峪关魏晋壁画5号墓。砖上绘一信使，头戴黑帻，着皂缘领袖中衣，左手持棨（qi ）传文书，跃马疾驰。棨传为通过各个关卡、驿站时的信物。驿马四蹄腾空，奔驰在戈壁绿洲的道路上。再现了1600多年前，丝绸之路上西北边疆驿使驰送文书的历史画面。&lt;br&gt;
+🌏奔马迅疾的身姿，显示出驿递任务的重大和紧迫；骑使所举传符，乃通过关门哨卡的凭证，飞驰中仍需手持擎示，是为了不至于因关卡验符而减速。头戴黑帽，身着短衫的驿使，举邮件的手和嘴持平，最有意思的是，驿使面部没有画出嘴，寓意守口如瓶，彰显驿传保密的重要性。古人不仅构思巧妙，而且还颇有意境，整个画面简练、明快，画师意象在胸，一笔到位，形神兼容。此砖画有两处画得十分传神，韵味十足，一处是画师对马的刻画非常精彩，马四足腾空，长尾平甩，马尾浓墨飞白，一挥而就，将马高速驰骋的雄姿表现得淋漓尽致。另一处就是驿使面部嘴巴处精妙绝伦的留白，不着一墨，自然而隐晦地表达出保密的意思，实为点睛之笔。这块写实砖画，在我国邮政史上是罕见之物。此画作为中国邮政标志，曾参加世界万国邮政博览大会。1982年8月25日邮电部发行《驿使图》纪念邮票（小型张）一枚，纪念中华全国集邮联合会第一次代表大会的召开。&lt;br&gt;
+《驿使图》壁画砖的发现很偶然，20世纪70年代，一个牧羊人无意间的发现，揭开了嘉峪关新城古墓群的挖掘序幕。1972年-1979年，甘肃省文物部门先后8次，共挖掘13座古墓。其中8座是彩绘壁画砖墓，共出土壁画砖660块，俨然一座“地下画廊”。这些画像砖除军事题材外，绝大部分都是一砖一画，笔法简练，形象生动，系统反映了魏晋时期的政治、经济、文化、军事、民俗、科技等内容，其绘画以中国传统的写实手法为主，早于莫高窟艺术。其中嘉峪关新城古墓群的5号墓是墓群中最具代表性的一座，后来整体搬迁到兰州，在甘肃省博物馆内复原。&lt;br&gt;
+我国邮驿通信历史悠久，最早是通过“击鼓传声”和“烽燧烟火”的方式传递。秦统一中国后，建立了以咸阳为中心的驿站网，形成了我国最早的邮驿法。汉武帝时，在河西走廊“设四郡、据两关”，邮驿文化发展迅速。&lt;br&gt;
+🌏中国古代邮驿系统：&lt;br&gt;
+中国古代邮驿系统很古老，从有文字记载的商朝算起就已经显露出雏形。作为古代政府为传递文书、接待使客、转运物资而设立的通信和交通组织，邮驿在古代一般不对民众开放。平时，它是传达政令、沟通中央与地方及地方间联系的纽带；战时，它是飞报军情、指挥作战的得力助手；一遇重大灾异或事变，它又成为政府采取特殊措施，处理非常事故的重要手段。&lt;/p&gt;
+&lt;p&gt;早在传说中的三皇五帝时代，尧为了采纳民间意见，特地修了一条康庄大道，专设喉舌之官——“纳言”，纳言就是上传下达信息的通信员。在河南安阳殷墟出土的甲骨文中，还有关于政府组织通信活动的记载。有一片商王武丁时期的甲骨文记载，一位年迈信使在路上走了26天，差不多600里的路，结果还没达到目的地就“过劳死”了。&lt;/p&gt;
+&lt;p&gt;殷商王朝与外地的消息往来传报，已逐渐形成了驿传制度，还设立了许多供贵族阶级人员过行食宿的“羁”舍。&lt;/p&gt;
+&lt;p&gt;西周时，全国有一套相当完整的邮驿通信职官系统。战国时期，单骑通信和接力传递已经开始，简牍和符节流行开来，人们在邮传简牍之时还进行加封保密。&lt;/p&gt;
+&lt;p&gt;秦始皇统一六国后，还颁布了我国最早的一部邮政法——《行书律》，制定它的目的是为了保证公文、书信及时、准确到达目的地。&lt;/p&gt;
+&lt;p&gt;古代邮驿系统从秦汉开始不断完善，一直发展到隋、唐、宋、元、明、清时期，贯穿了整个封建社会的始终，“置”“驿”“邮”“塘”“所”“亭”“传”“铺”等一系列的汉字都与古代邮驿系统紧密相关。很多词汇也因此而诞生，“急脚递”就是400里加急快递；“信幡”是三国曹魏发明的利用不同颜色和图案的旗帜，可传达保密信息；唐代各大藩镇在长安的“进奏院”就是当时的“驻京办”；“马上飞递”“六百里加急”等成为汉语常用词汇。可见邮驿在古代社会中的重要地位。&lt;br&gt;
+👉东汉 胡人俑座灯&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437075874.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+胡人俑是岭南地区从西汉中期到东汉未年常见的陪葬品，在广东广州、三水、韶关以及广西的合浦、贵港、梧州等地均有发现。陶俑面部具有明显域外人种特征，深目高鼻、络腮胡须，反映出两千多年前“胡人”的形象。&lt;br&gt;
+👉船纹铜提桶 西汉南越国 公元前204年一前111年&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437250835.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437261829.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437276200.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437294827.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+铜提桶是一种极富地方特色的存储器，曾出现在广东广州肇庆和广西贵港、贺州等南越贵族墓葬中。铜提筒器身上所刻的“羽人船纹”，画面上船体呈弓形、人物头戴羽毛，描绘了一场盛大的祭祀庆典活动。这种纹样题材同样有见于岭南地区以及东南亚出士的铜鼓中，反映出岭南先民与南海诸国之间的密切关系。&lt;br&gt;
+提筒在两广、越南等地均有发现，是一种极具越族特色的器物。南越国的提筒，应是作储酒之用。墓中出土大小不一的青铜提筒共9件。&lt;br&gt;
+船体明显绘出甲板，船内分舱，满载战利品，其中的一舱内满是铜鼓，船旁还绘有海龟、海鱼和海鸟，并有“羽人”战士提敌首级或执宰俘虏等情形。从船上主要人物的活动来看，反映的可能是一支船队在战争结束，凯旋的场景，也有学者认为可能是在杀俘虏祭海（河）神。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437674061.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+铜提筒上的船纹反映了中国古代的造船技术，整船造型合理，可见清晰的水密舱结构。所谓水密舱，就是用木板把船舱分隔成一个个互不相通的分区，避免因船舱进水使船只倾覆。&lt;br&gt;
+羽人船纹展现的水密舱结构，说明早在西汉中早期，先民们可能就已发明了水密舱技术。这一技术的产生使远航成为可能，对后世航海影响深远。&lt;br&gt;
+船尾羽人操持着一条狭长物体，当为某种控制船只行进的工具，它很有可能是尾橹。橹作为船舶的一种推进工具，在桨的基础上演化而来，橹摆动时，船与水接触的前后部分产生压力差，由此产生推力推动船只行进，它的效率大约是桨的三倍。橹的出现同样是船舶推进工具的巨大革新，它和水密舱技术都属于中国科技史上的重大发明。&lt;br&gt;
+👉態饰空心砖踏跺 汉 公元前202年一220年&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437782171.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650437793169.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440766566.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440777912.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+熊寓意着勇猛和强悍，商周时期已是常用的装饰题材。至秦汉时期，熊的艺术造型更加丰富多彩，代表着拥有者特殊的身份地位。汉代以熊做装饰的残砖在甘肃酒泉和广东广州皆有发现，纹饰皆作熊正面踞姿状。无论是西北中央王朝的军事边塞，还是南方边远属国的华丽殿宇，都采用图案造型相近的建筑构件，体现出汉代诸侯等级制度、礼仪的一致性。&lt;br&gt;
+🌏在汉代，中国玻璃制造业已经达到相当高的水平，出现了不少独具特色的玻璃器物。广州西汉南越王墓出士了一批玻璃饰品，款式类型多样，如蓝色板块玻璃、玻璃贝、玻璃壁。经过化学检测，这些蓝玻璃和玻璃贝皆国产铅钡玻璃，与西方的钙钠玻璃系统不同。广东广州和广西合浦的汉墓都曾具有异域风格的玻璃容器，透明度较好。从外表打磨痕迹看出，岭南的玻璃容器与中原抛光方式不同，却跟同时期西方罗马玻璃制作工艺相通。&lt;br&gt;
+👉陶熏炉 东汉 公元25年—220年&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650438162287.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650438186108.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+此熏炉又称为博山炉，是中国汉代常见的焚香器具。博山炉之顶盖外观似群山，炉下有底座。当炉中焚香时，轻烟缭绕，营造出海上仙山若隐若现的迷人意境。&lt;br&gt;
+🌏西汉时期博山炉的出现，与当时燃香原料有关。从前人们直接点燃茅香等草本植物，燃烧产生的烟火气较大。后来，乳香、苏合香、龙脑香等树脂类香料纷纷从岭南或异域传入中原。这些树脂类香料被制成香球或香饼，置于炭火之上，香味浓郁且烟火气较小。&lt;br&gt;
+🌏&lt;img src=&#34;http://localhost:4000/post-images/1650438425267.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+🌏西汉南越国四连体铜熏炉—丝绸之路上进口中国的最大宗商品之一。西汉南越王墓出士的乳香、甘肃敦煌汉代悬泉置遗址出士的带字残纸，都证明2000年前已有来自西域及南海诸国的香料。当时的香料多为有机质，通过熏烧达到治病除臭的效果，或作于祭祀避秽之用。&lt;br&gt;
+👉西汉南越国焊珠金花泡&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650438703009.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉丝绸舞马面罩 唐 公元618年—907年 ⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650438907758.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+此面罩应该是表演时佩戴于马面上的装饰。舞马表演最早的记载见于唐中宗景龙三年（公元709年），唐玄宗时期最为鼎盛，深受当时宫廷和上层社会的青睐。经历安史之乱后，舞马活动渐次销声匿迹。&lt;br&gt;
+👉辽 缕空凤鸟纹金冠⛅️甘肃博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439324783.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439338823.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439350533.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+金冠是高筒形状，冠体由四片花瓣形金片拼合成圆筒形;冠正面居中錾刻火焰宝珠、两侧为两只展翅鸣叫的凤鸟，冠两侧饰折枝菊花和变形去纹。冠顶正中缀鎏金金翅鸟，双足踩在莲花座上，鸟尾巴高高翘起，展翅欲飞。根据文物特点及其他线索，可以推断金冠为辽代帝后所戴之冕，出土地应该是内蒙，全国极为稀有，在西北地区的博物馆中仅此一件。&lt;br&gt;
+👉沉船出水银铤 宋 960年—1279年 ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439582911.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439595895.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉银铤 宋 960年—1279年 ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650439608379.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+自唐以来，出现将白银熔铸成条块状的银铤。它作为流通货币之一，常被国家贮备、民间窖藏。银铤上常刻有铭文，涉及古代政治、经济、军事等方面，真实地传递了当时的社会信息。西安出土波斯胡商伊娑郝的银铤，根据银铤上的铭文得知，这些银铤原为波斯商人伊娑郝于约公元780年客死广州留下的遗产，被官府没收后由负岭南节度使张伯仪和市舶使刘楚江送往西安。由此可得知，唐代市舶司由朝廷直接派出，同节度使一起共同管理海外贸易。节度使主要职掌对外贸易和外商司法等具体事务，市舶司则参与向朝廷奏报进奉、征收商税等工作。&lt;br&gt;
+👉波斯蓝釉陶瓶 南汉 公元917年—971年&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440287189.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440298080.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440307335.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650440317581.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这件波斯蓝釉陶瓶出土于广州大马站景豪坊工地。波斯蓝釉陶瓶多数作为香油、葡萄酒、蔷薇水等液体的储运容器，大多是唐五代时期从西亚引入。此类陶瓶在我国广州、福州、扬州、宁波、桂林等沿海地区均有发现，国外则分布西起非洲东海岸、东抵日本。&lt;br&gt;
+🌏位于西亚的伊朗，我国古代称为“安息”国。公元前六世纪称波斯，是一个幅员辽阔的大帝国。一般在史学界和陶瓷界所称的“波斯陶器”有广义和狭义的两种解释。广义是指古代波斯帝国从远古时代的彩陶、黑陶、红陶到阿巴斯王朝的多色施釉陶器。列入古代波斯帝国版图的除了伊朗之外，还有叙利亚、埃及、土耳其、伊拉克及现在苏联的乌兹别克斯坦等广大地区。因此我们所说的波斯陶器是指属于波斯政治圈及文化圈的一种陶器风格，并不局限于狭义的伊朗陶器，而是泛指中东伊斯兰地区的陶器。&lt;br&gt;
+应该说，波斯陶器既不同于东方中国、朝鲜、日本等东亚的陶器，又与西方的欧洲陶器有着完全不同的鲜明风格。从公元七世纪中叶伊斯兰时代开始，波斯陶器就在中东地区以其独特的面貌出现，在世界陶瓷史上，与东亚陶瓷及欧洲陶瓷一样占有重要的地位。&lt;/p&gt;
+&lt;p&gt;🌈酒歌—中国酒文化临展&lt;br&gt;
+🥃绿蚁新醅酒&lt;br&gt;
+📕浊酒，这酒还没有过滤呢，所以上面是一层沫。这种酒沫夹杂着酒渣，呈微绿色，细小如蚂蚁，所以又被称为绿蚁&lt;br&gt;
+👉什么是酒？酒从何而来？&lt;br&gt;
+凡含有酒精（乙醇）的饮料，均称作“酒”，是多种化学成分的混合物。酒精是其主要成分，此外还有水和众多化学物质。酒精的化学名称叫已醇（ethanol），有机化合物，分子式C2H6O，结构简式 CH3CH2OH 或C2H5SOH。乙醇的物理特征为常温下液态，无色透明、易燃易挥发，沸点是78.23°，冰点是-114.3°C。&lt;br&gt;
+饮料酒中酒精的百分含量称作“酒度”。酒度有体积、质量、标准酒度三种表示方法。国际酿酒业中，规定在温度为20°C，乙醇含量的体积百分比为酒精度数，简称“酒度”，以“％ vo1” 或“°”表示。饮料酒指酒精度在0.5% vol 以上的精饮料，酒精度低于0.5% vol 的无醇啤酒也属于饮料酒。&lt;br&gt;
+👉酒的传说&lt;br&gt;
+我国是世界文明古国之一，酿酒历史悠久。有关酒的起源，众说纷纭，各有一番道理。时至今日，关于酒的传说有上天造酒、猿猴造酒、仪狄造酒，杜康造酒等。关于粮食酒的起源，综合起来，大体有几种意见，分别为龙山文化早期（距今5000年前)，仰韶文化时期（距今6000 至7000年前），裴李岗文化时期（距今8000年前左右）等，没有统一说法。我国以谷物酿造黄酒，大约始于新石器时代初期，到了夏朝已有较大的发展，蓬勃发展时代应当始手发明饼曲、块曲之时，即大约始于春秋战国、秦汉时期。&lt;br&gt;
+📕上天造酒&lt;br&gt;
+自古以来，文人墨客常有带“酒星”或“酒旗”这样的词句如“天若不爱酒，酒星不在天”，“天垂酒星之耀，地列酒泉之郡”，“龙头泻酒邀酒星”等，宋代窦苹所撰《酒谱》中，也有“酒星之作也”的话。由此，我国古代就有酒是天上“酒星”所造的说法。&lt;br&gt;
+📕猿猴造酒&lt;br&gt;
+远古时期，猿猴采食野果，将吃剩的果实随便扔在岩洞。这些果实腐烂时糖分自然发酵，变成液浆，形成天然的果子酒。《清稗类钞•粤西偶记》中记载：“平乐等府深山中，猿猴极多，善采百花酿酒。樵子入山得其巢穴者，其酒多至数石，饮之香美异常，名日‘猿酒’”。&lt;br&gt;
+📕仪狄造酒  杜康造酒&lt;br&gt;
+一种说法叫“酒之所兴，肇自上皇，成于仪狄”。“作酒而美”、“始作酒醪”的记载，似乎仪狄乃制酒之始祖。一说法叫“仪狄作酒醪，杜康作秫酒”。“醪”，是一种糯米经过发酵工而成的“醪糟儿”。性温软，其味甜，多产于江浙一带。“秫”高梁的别称。杜康，宇仲宁，相传为康家卫人，善造酒。杜康作秫酒，指的是杜康造酒所使用的原料是高粱。&lt;br&gt;
+黄酒是中国古代酒桌文化的主旋律，长期以来与文人墨客相伴，提供创作灵感。而现代意义上的白酒，是在蒸馏技术出现后才诞生，流行则更晚。&lt;br&gt;
+👉酒的分类&lt;br&gt;
+酒精性饮料按生产工艺、不同原料和产品特性等进行分类。&lt;br&gt;
+按生产工艺特征分类为发酵酒、蒸馏酒和配制酒。&lt;br&gt;
+发酵酒是以粮谷、水果、乳类为主要原料，经发酵或部分发酵而成的饮料酒，如黄酒、啤酒、葡萄酒；&lt;br&gt;
+蒸馏酒是以粮谷、薯类、水果、乳类等为主要原料，经发酵、蒸馏、勾兑而成的饮料酒；&lt;br&gt;
+配制酒，又叫露酒，是以发酵酒、蒸馏酒或食用酒精为酒基，加入可食用或药食两用的辅料或者食品添加剂，进行调配、混合或再加工制成的已改变了原酒基风格的饮料酒。&lt;br&gt;
+按酿酒用的原料分类可分为粮食酒（谷物酒）、果酒、代粮酒。&lt;br&gt;
+按酒精含量可分为高度酒、中度酒、低度酒等。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650462522695.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650462531550.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;🥃把酒话桑麻&lt;br&gt;
+📕什么可以做酒？酒怎么产生？&lt;br&gt;
+传说中有关酒的起源很多。现代生物学和化学认为，酒的酿造原理并不复杂，本质上是含淀粉或糖类物质经微生物发酵的过程。含淀粉或糖类物质如粮食、水果等在条件合适时，经自然发酵、产生酒味的现象。从历史来看，酿酒技术的成熟，历经数千年的漫长发展，大致经过了从自然发酵的果酒、酿造的粮食酒和蒸馏酒的技术阶段。航海大发现时期，各个大陆之间进行了密切的植物交流，人类的劳动智慧共同促进了酿酒原料取材范围的扩大和制酒工艺的提高。&lt;br&gt;
+👉稻梁佳酿&lt;br&gt;
+清醠之美，始于耒耜。&lt;br&gt;
+粮食生产的初步发展为酿酒提供了主要原辅料上充足的准备。无论制曲还是基础的酒饭，粮食的充足是酿酒的必要条件，这其中有稻、小麦、大麦等。中国的酒以酿造为主，原料以谷物、果实等为主。岭南物产丰富，盛产花果，很多食物被加入酒中，成为岭南特色的酒品。&lt;br&gt;
+📕农作物对中国的影响&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463081124.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463158605.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463181253.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463196091.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉曲蘗&lt;br&gt;
+若作酒醴，尔惟曲糵。- 《尚书•商书•说命》&lt;br&gt;
+《齐民要术》“作蘖法” 记载：“盆中浸小麦，即倾去水，日曝之。一日一度着水，即去之。脚生，布麦于席上，厚二寸许。一日一度，以水浇之，牙生便止。浸小麦于水而日曝之，又以水浇之至牙生而止。”这种糖化谷芽放置久则产生酒味，酿成的酒为醴，酒化程度不高。&lt;br&gt;
+麴、麯，同“曲”。曲，曲酒的酿造则是蒸煮谷物长时间放置后产生甜味继而变成的酒。脱壳后的糙米浸入水中，调整水分，产生酒曲，进行糖化、水解，同时进行酵母的繁殖和酒精发酵。这种曲酒比醴的酒化程度高。藥，是以谷芽作为培养基制成的酒母。&lt;br&gt;
+👉曲蘗之功&lt;br&gt;
+中国的黄酒，是与啤酒、葡萄酒齐名的古老酒种。黄酒酿造以谷物为原料，早在商代就开始使用酒曲发酵，制酒工艺源远流长，酿酒技术独树一帜，以制曲技术为根本，随着文化交流，制酒技术不断进步和发展。酿酒的关键是发酵。粮食、水果等在条件合适时，经自然发酵、产生酒味的现象，这是酵母菌将食物里的糖类转化成了酒精和二氧化碳。人们发现，先让谷物发霉生菌，再干燥加工成“曲”，就可以作为酿酒的引子。&lt;br&gt;
+👉南北制曲&lt;br&gt;
+上古时期的曲是一种发霉及发芽的谷物。散曲后出现了饼曲。到了两汉时，汉代已产生饼曲，这是我国酒曲发展史的一个重要里程碑。这是古代最早的麦曲，为现代传统麦曲生产奠定了基础。白酒生产用的大曲是在黄酒麦曲基础上形成自己风格的酒曲。&lt;br&gt;
+春秋战国时期，因地理气候条件和酿酒原料的不同，形成了不同的南北酿酒方式：&lt;br&gt;
+南方以大米为原料，以大米或米粉制成以根霉为主的饼曲，即小曲。&lt;br&gt;
+北方则是以黍为主要原料，用小麦制成根霉为主的饼曲，即大曲。&lt;br&gt;
+南酒，北酒由此产生。&lt;br&gt;
+👉酒曲&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463517827.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉1974年产原箱葵花牌茅台&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463590778.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650463600429.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+2021年6月在伦敦苏富比拍卖会上，“1974年产原箱葵花牌贵州茅台酒”以100万英镑成交（折合人民币约900万元），创下了中国境外单批整箱茅台酒有史以来最高的价格。而这箱茅台酒就是彼箱茅台酒。&lt;br&gt;
+新中国成立后，茅台酒就担负着外交和出口创汇的重任。1957年贵州茅台酒开始外销，最早使用“金轮”牌商标，后改用“飞天”牌商标。1968—1975年，“葵花”牌商标暂时取代“飞天”牌商标用于贵州茅台酒的出口销售，其中1974年“葵花”牌贵州茅台酒的产量是最少的。直到1975年，外销茅台酒才恢复使用“飞天”牌商标。&lt;br&gt;
+展厅里展出的这一箱“葵花”牌茅台酒，是已知现存唯一一箱1974年生产的葵花牌茅台酒，因其距今年份长久，再加上自身的稀缺性、品相完好而极具历史价值。该箱茅台内包装完整，共存放有24瓶茅台酒，装箱单及装箱钉完好。装箱单完整文字为：人民，只有人民，才是创造世界历史的动力。&lt;br&gt;
+🥃四季变换，产生了与天时、物候相适应的人文活动，产生根源在于人们祈望五谷丰登、人畜两旺，岁岁平安。这些活动中，酒总是如约而至。&lt;br&gt;
+“无酒不成席”，“无酒不成礼”“无酒不成俗”。酒最初是作为供上神的饮品，遵循庄严的酒礼如“饮惟祀”、“无彝酒”、“执群饮”、“禁沉湎”。魏晋之前饮酒喜冷，时冷饮同服“五石散”的方式在名士阶层中形成风气；直到五代逐渐有温酒的方式，伴随温酒的器具也应运而生，饮酒的礼仪方式更是妙趣横生，伴随酒的文化绵延发展。&lt;br&gt;
+👉饮酒礼仪&lt;br&gt;
+远古时代形成了一些礼仪，饮酒礼仪四步之拜、祭、啐、卒爵。敬酒之：避席、酬、酢、旅酬、行酒。&lt;br&gt;
+先秦燕饮，主人进宾客之酒，谓之献；宾客还敬主人之酒，谓之酢；主人先自饮，然后劝宾客饮之酒，谓之酬。献、酢、酬，此三项程序合起来，称作“一献”。一献之礼后，宾客之间的劝酒为旅酬，以长幼为序，依次相酬。旅酬需举杯饮尽，即“干杯”，依次尽杯，一人饮毕，再及一人。两汉遗先秦遗风，唐代称之“巡饮”。&lt;br&gt;
+中国古代的赐酺，起于秦，终于宋。封建帝王布德于天下，令众人合聚饮食之意。所饮酒食都由官府提供，或一日、三日，或五日、七日不等，表示皇帝恩赐，故称“赐酺”。&lt;br&gt;
+📕禁酒之诰&lt;br&gt;
+《尚书•酒诰》中禁酒之诰基本上可归结为：“饮惟祀”、〝无彝（yi）酒”、“执群饮”、“禁沉湎”。祭祀敬神，养老奉宾，都可以饮酒，就是不能喝醉与聚众饮酒，这构成了中国西周禁酒思想的主体。&lt;br&gt;
+📕“五齐三酒”活动&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650472600332.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕《宣和博古图》—。酒器之名多源自此书，由宋人定名，然最早酒器源自先秦。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650472653054.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕西周青铜器主要演变图&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650464451391.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650464469061.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕尊，造型大口，圈足，与觚、觯类似，三者大者为尊。尊在礼器中的地位仅次于鼎，用于祭祀。&lt;br&gt;
+👉目云纹铜爵 商  ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650466446780.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+殷尚醴，周尚酒。醴酒深为王者重视，是重要的祭祀酒。以爵盛酒供神享用。鬯（chang四声），为重大节日活动庆典用的香酒，当时酒中添加植物香料以增香，如用含郁金的香草煮的黑黍酿而成。周人用以敬神，是我国最早的配制酒，也是药酒的先祖。周后醴、酒并行。&lt;br&gt;
+👉兽面纹青铜盉 西周 ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650472925384.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650473570906.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+1974年出土于信宜县松香厂工地的西周兽面纹青铜盉，是广东省首次发现的西周青铜器。岭南青铜器受楚文化影响明显。青铜盉为本地仿铸中原型铜器，添加了土著越族因素。&lt;br&gt;
+📕青铜器是由青铜合金（红铜与锡的合金）制成的器具，诞生于人类文明时期的青铜时代。中国青铜器，出现并流行于4000年前直到秦汉时代，以商周器物最为精美，在世界青铜器中享有极高的声誉和艺术价值。&lt;br&gt;
+📕青铜盉盛行于商晚期和西周，流行到春秋战国。盉字从皿，从禾，禾亦为声部。“禾”指“五谷”、“粮食”。“皿”指“容器”、“盛器”。“禾”与“皿”联合起来表示“把五谷所酿之酒放到容器里进行配比品尝”。王国维《说盉》中指出：“盉乃和水于酒之器，所以节酒之厚薄者也。”盉的形状较多，一般是圆口，深腹，有盖，前有流，后有鋬（音畔），下有三足或四足，盖和鋬之间有链相连接。&lt;br&gt;
+📕商周青铜器纹饰其神秘、独特、璀璨的艺术特征延续了十多个世纪，营造出中国早期文明极浓厚的神秘氛围。在这件西周青铜盉上，夔龙纹、云雷纹和饕餮纹，都有着精彩的呈现，展现了时代特征。&lt;br&gt;
+📕夔龙纹：商周时代青铜器上的一种动物纹饰，其纹多图案化，全系动物侧身形状的刻绘，多具张口巨首、长身卷尾、头顶一角、身下一足之形；但若作立体观，它就是双角两足的长身动物。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650473960454.jpeg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕云雷纹：青铜器上常见的一种典型的纹饰，基本特征是以连续的“回”字形线条所构成。有的作圆形的连续构图，单称为“云纹”；有的作方形的连续构图，单称为“雷纹”。云雷纹常作为青铜器上纹饰的地纹，用以烘托主题纹饰。也有单独出现在器物颈部或足部的。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650473484972.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕饕餮纹：图案庄严、凝重而神秘，一般以动物的面目形象出现，具有虫、鱼、鸟、兽等动物的特征，由目纹、鼻纹、眉纹、耳纹、口纹、角纹几个部分组成。&lt;br&gt;
+饕餮纹凶猛庄严，结构严谨，制作精巧，境界神秘，是青铜器装饰图案中最优秀的作品之一，代表了青铜器装饰图案的最高水平。&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650473974647.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+👉鎏金青铜卮 西汉 ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650474081111.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650474177710.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+卮，多为筒形，亦为酒器。卮酒，即一杯酒。栀子因果实外形跟卮相似而得名。&lt;br&gt;
+👉羽翅纹铜霝 春秋 ⛅️广东省博物馆&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650474243326.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+霝，和壶、瓶为一系，出现于西周晚期，沿用至春秋时期，是一种盛酒器。&lt;br&gt;
+👉铺首衔环耳铜钫 汉&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650474432919.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650474450826.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕酒的计量&lt;br&gt;
+古之善饮者，多至石余。由唐以来，遂无其人。隋朝后更改度量衡制度，斗、石都比原来一倍大了。古代容积单位石，1石合10斗，1斗合10升。石也可作为重量单位。&lt;br&gt;
+周王制：一升曰爵，二升曰斛，三升曰觯，四升曰角，五升曰散，一斗曰壶——《酒谱》&lt;br&gt;
+据现代学者对汉代容器的实测，当时 1升相当于现在的200毫升，因此一石酒大致可以装满33个啤酒瓶（以酒、水比重相当略计算，1啤酒瓶约为600毫升计算。）&lt;br&gt;
+📕茶、酒谁先？&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650520836419.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕铜胎掐丝珐琅兽面纹出戟方罍 清  ⛅️广东省博物馆  体现出宋始复古尚礼，好古之风盛行。仿商周青铜礼器，曲线更为柔美，造型更加简洁，体现出含蓄素雅的美学意趣，后延续至今。&lt;br&gt;
+📕犀角杯&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650521047980.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+📕公道杯&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650521167712.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650521305147.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:4000/post-images/1650521350920.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">广东省博物馆</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/xi-bei-xing/"" data-c="
+          &lt;p&gt;🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈&lt;br&gt;
+二零二二年元月初&lt;br&gt;
+新疆库尔勒、博乐、阿勒泰、甘肃嘉峪关&lt;br&gt;
+🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈&lt;br&gt;
+带着对西域的好奇，踏上了这次旅途&lt;br&gt;
+新疆一词，是乾隆在平定了准噶尔部的叛乱之后，将原来称为西域的地方更名为新疆，意为他族逼处，故土新归。&lt;br&gt;
+入疆，绕不开中原进入西域的通道—河西走廊。&lt;br&gt;
+在时空重叠的旅途上，一路上惊叹于戈壁沙滩，雪山草原，丹霞雅丹，河西走廊汇聚了除海洋之外，这个星球上所有能见到的地形地貌。猛然想起来那417年前，鄂本笃穿越雄伟的嘉峪关来到明朝西部边境—肃州！最终因明朝政府的边境国策，未能抵达他此行的目的地—北京。在肃州辞世!&lt;br&gt;
+他此行的见闻使之后的欧洲对东亚地理有了较为精确的认识！发源于古代地图上的古国名称“秦尼”才正式成为东亚帝国的统称。China一词，也由此固定。&lt;br&gt;
+鄂本笃是第一个元朝之后有记载的由陆路到达中国的欧洲人。&lt;br&gt;
+古往今来，这条通道吸引了无数人纷纷踏来，往来客商，欧洲人，中亚人。&lt;br&gt;
+☁️故事的起点可以追溯到公元前139年，汉武帝在甘泉宫召见张骞，寻找大月氏夹击匈奴。继而开启了中原探索西域的旅程！1877年，德国地理学家李希霍芬在其著作中第一次将这条通道命名为“丝绸之路”&lt;br&gt;
+河西走廊东起乌鞘岭，西至星星峡，南侧是祁连山脉，北侧是龙首山，合黎山，马鬃山。&lt;br&gt;
+因地处黄河以西，形似走廊，为称为河西走廊。&lt;br&gt;
+南北沟通青藏高原和蒙古高原。东西连接塔里木盆地和黄土高原。&lt;br&gt;
+公元前111年，汉武帝设河西四郡（敦煌、酒泉、张掖、武威）如今的河西五市&lt;br&gt;
+公元前60年，置西域都护府，将西域正式纳入中国版图。&lt;br&gt;
+这其中河西四郡每个城市的命名都有其深刻含义：&lt;br&gt;
+☁️武威：武功军威之意。彰显汉帝国的武功和军威到达河西之地&lt;br&gt;
+☁️张掖：断匈奴之臂，张汉朝之臂腋&lt;br&gt;
+☁️酒泉：扼守河西走廊西北要冲，因城下有泉，泉水若酒，故名酒泉。也有一种说法为霍去病倒酒入泉，与士卒同饮&lt;br&gt;
+☁️敦煌：即盛达辉煌之意&lt;br&gt;
+这一路，有幸见到了课本插图中提及的风景：&lt;br&gt;
+祁连山脉，贺兰山缺，塔克拉玛干沙漠，天山山脉，塔里木盆地，准噶尔盆地，昆仑山脉，帕米尔高原&lt;br&gt;
+这一路，更正了错误的念法&lt;br&gt;
+库车龟兹、莎车、大宛、大小月氏&lt;br&gt;
+这一路，记忆里在史书中、课本中才会出现的名词地名，与现实碰撞&lt;br&gt;
+龙城，阳关，嘉峪关，玉门关，楼台，轮台&lt;br&gt;
+这一路，同样是活跃在史书字里行间的名字，自然而然的出现&lt;br&gt;
+汉武帝，张骞，卫青，霍去病，解忧公主。还有那个为张骞付出很多、史书中却不提及其名字的女人&lt;br&gt;
+☀️行至敦煌，一望无际的戈壁沙漠中有一处强烈且刺眼的光亮源，吸引了眼球。过后，自行搜索才得知，它的专有名词—熔盐塔式光热电站。此处为亚洲最大！我国自主设计，出资，建设的中国国家名片。&lt;br&gt;
+☀️此行先行来到了库尔勒，全名为郭音八楞蒙古自治州。新疆第二大城市！想找寻传说中塔克拉玛干沙漠中的移动航母。可惜无缘得见，另不知有无。&lt;br&gt;
+☀️随后来到边境城市—博乐市，全名为博尔塔拉蒙古自治州。赛里木湖&lt;br&gt;
+第二天，博乐市就下起了大雪，从这一刻起，大学就伴随我们出疆直至嘉峪关！&lt;br&gt;
+☀️这里是左宗棠抬棺出征收复伊犁，凯旋归来，题写天下第一关的西北雄关。&lt;/p&gt;
+">西京自有麒麟阁，画向功臣卫霍间—西北行</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="http://localhost:4000/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;瞎写乱玩......&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好&#34;&gt;⛹ 兴趣爱好&lt;/h2&gt;
+&lt;p&gt;读历史不看地图 就像太监逛窑子&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200
+    });
+  </script>
+
+
+
+<script src="/media/js/mouse/love.js"></script>
+
+
+
+
+  <div class="snow-container"></div>
+  <script color="0,205,205" pointer-events="auto" zIndex="-1" opacity='0.7' count="99" src="/media/js/bg/canvas-nest.js"></script>
+
+
+</html>
